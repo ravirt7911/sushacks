@@ -2,7 +2,7 @@ import React from "react";
 import "./App.css";
 
 import Navbar from "./components/Navbar/Navbar";
-import Timeline from "./Timelines/Timeline";
+import Timeline from "./components/Timelines/Timeline";
 
 function App() {
   return (
