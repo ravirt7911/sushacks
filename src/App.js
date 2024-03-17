@@ -1,11 +1,11 @@
 import React from "react";
 import "./App.css";
 import About from "./Components/About/About";
-import Sponsors from "./components/Sponsors/Sponsors.js";
-import Contact from "./components/Contact Us/Contactus.js";
-import Prizes from "./components/Prizes/Prizes.js";
-import Navbar from "./components/Navbar/Navbar.js";
-import Tracks from "./components/Tracks/Tracks.js";
+import Sponsors from "./Components/Sponsors/Sponsors.js";
+import Contact from "./Components/Contact Us/Contactus.js";
+import Prizes from "./Components/Prizes/Prizes.js";
+import Navbar from "./Components/Navbar/Navbar.js";
+import Tracks from "./Components/Tracks/Tracks.js";
 //import Timeline from "./components/Timelines/Timeline.js";
 
 function App() {
