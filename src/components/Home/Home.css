@@ -7,31 +7,11 @@
     gap: 20px;
 }
 
-.crew img{
-    width: 580px;
-    height: 300px;
-}
-
-
 .susHacks{
     width: 370px;
     height: 389px;
 }
 
-.home-about{
-    margin-top: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-}
-
-.planet img {
-    position: relative;
-    top: -220px;
-    z-index: -1;
-}
 .start{
     position: relative;
 }
@@ -82,4 +62,16 @@
         margin-left: -10px;
     }
     
+}
+
+@media (min-width: 361px) and (max-width: 799px) {
+    .home-container{
+      display: flex;
+      justify-content: space-between;
+      align-items: last baseline;
+      margin-left: -1px;
+      margin-top: -55px;
+      gap: 20px;
+    }
+        
 }
