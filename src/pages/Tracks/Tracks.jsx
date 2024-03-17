@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import './Tracks.css';
-import img1 from '../../Images/amongusred.png';
+import img1 from '../../assets/amongusred.png';
 
 const TracksData = [
     {
