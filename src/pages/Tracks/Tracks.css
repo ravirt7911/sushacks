@@ -1,0 +1,124 @@
+.TracksHome
+{
+    height:60vh;
+    background-color:#1A282F;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+    font-family: 'Among Us';
+    font-size: 2rem;
+}
+.TracksHeader
+{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    height:30px;
+    width: 100%;
+    padding: 4px;
+}
+.TracksName
+{
+    background-color: #00FFE0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+}
+.TracksIcon
+{
+    margin-left:20px;
+    color: grey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 1px;
+}
+.TracksContainer
+{
+    height:50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+.TracksHeader
+{
+    display: flex;
+    justify-content: space-between;
+    padding: 4px;
+}
+.TracksDescriptionBox
+{
+ flex:4;
+ display: flex;
+ font-family: var(--font);
+ font-size: 1rem;
+ text-align: center;
+ align-items: center;
+ justify-content: center;
+ flex-direction: column;
+ background-color: black;
+ border:7px solid #00FFE0;
+ border-radius: 5px;
+ margin: 20px;
+ height:280px;
+ padding-left: 40px;
+ padding-right: 40px;
+}
+.TracksDescriptionBox p{
+    color: aliceblue;
+}
+.TracksDescriptionBox h1{
+    color: aliceblue;
+    font-family: 'Among Us';
+    font-size: 3rem;
+    letter-spacing: 3px;
+}
+.TracksButtons
+{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    padding: 20px;
+    border:5px solid #00FFE0;
+    border-radius: 5px;
+    margin: 10px;
+}
+.TracksButton{
+    margin-top: 5px;
+    padding: 7px;
+    background-color: black;
+    border: 2px solid #00FFE0;
+    color:aliceblue;
+    font-family: 'Among Us';
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+    border-radius: 5px;
+}
+.TracksButton.active {
+    margin-top: 5px;
+    padding: 7px;
+    background-color: #B9F2EB;
+    color: black;
+    border: none;
+    font-family: 'Among Us';
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+    border-radius: 5px;
+}
+.BlinkingCircle {
+    width: 10px; 
+    height: 10px; 
+    border-radius: 50%;
+    background-color: #B9F2EB; 
+    margin-right: 20px;
+    border: 2px solid rgb(114, 190, 114);
+  }
+  
