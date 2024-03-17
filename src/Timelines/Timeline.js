@@ -23,21 +23,42 @@ const Timeline = () => {
     <div className="progresBar">
     <ProgressBar  borderRadius='0' animateOnRender = {true}completed={((active+1)*100)/6}  labelColor='green' bgColor='green'/>
     </div>
+
+    <div  className='PP' style={{backgroundImage:`url(${require('./assets/phn.jpg')})`,backgroundSize:'cover',backgroundPosition:'center',borderRadius:'20px'}} >
     
       <Swiper
-        freeMode = {true}
         grabCursor = {true}
-        slidesPerView={3}
-        spaceBetween={10}
-        centeredSlides = {true}
+        slidesPerView={1}
+        spaceBetween={40}
+        centeredSlides = {false}
+        // style={{backgroundImage:`url(${require('./assets/phn.jpg')})`,objectFit:'contain'}} 
         className='card__container'
         onSlideChange={(e)=>setActive(e.activeIndex)}
         onActiveIndexChange={(e)=>console.log(e)}
-        //style={{backgroundImage:`url(${require('./assets/i')})`}}
-        pagination={{ el: '.swiper-pagination', clickable: true }}
-        autoFocus = {true}
+        pagination = {{
+          el: "swiper-pagination",
+          clickable: true,
+          dynamicBullets: true,
+        }}
+        navigation = {{
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        }}
+        breakpoints = {{
+          600: {
+            slidesPerView: 2,
+          },
+          968: {
+            slidesPerView: 3,
+          },
+        }}
       >
 
+
+
+  
+
+ 
 
         
         <div className='card__content' >
@@ -165,6 +186,20 @@ const Timeline = () => {
 
 
       </Swiper>
+      </div>
+
+
+      <div className="swiper-button-next">
+               <i className="ri-arrow-right-s-line"></i>
+       </div>
+            
+            <div className="swiper-button-prev">
+               <i className="ri-arrow-left-s-line"></i>
+            </div>
+
+           
+            {/* <div className="swiper-pagination"></div> */}
+        
 
      
    </div>
