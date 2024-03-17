@@ -38,12 +38,12 @@
   }
 }
 
-nav{
+nav {
   /* background-color: black; */
   height: 100px;
   width: 100%;
   display: flex;
-  align-items : center ;
+  align-items: center;
   justify-content: center;
   gap: 30px;
 }
@@ -55,10 +55,10 @@ nav{
   padding: 30px;
   position: relative;
 }
-.nav_link:hover{
+.nav_link:hover {
   padding: 8px 12px;
   font-size: 34px;
   font-weight: 400;
   /* background-color: #dddfe1a2;  */
-  text-shadow:1px 0 10px  rgb(240, 230, 27) ;
+  text-shadow: 1px 0 10px rgb(240, 230, 27);
 }

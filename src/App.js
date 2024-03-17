@@ -1,15 +1,13 @@
 import "./App.css";
 import Navbar from "./components/nav.jsx";
+import Sponsers from "./components/sponsers/sponsers.jsx";
 function App() {
   return (
-  <div className="App">
-    < Navbar/>
+    <div className="App">
+      <Navbar />
+      <Sponsers/>
     </div>
-  )
-
-  return <div className="App">Testing sus hackkkkkkkkkkkkk</div>;
-
-
+  );
 }
 
 export default App;
