@@ -1,6 +1,18 @@
+
+:root {
+    --font:"Inconsolata", monospace;
+}
+
+body {
+  background-image: url(../src/assets/back.png);
+  font-family: 'Among Us';
+}
 .App {
   text-align: center;
-  background-color: bisque;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-family: sans-serif;
 }
 
 .App-logo {
@@ -12,10 +24,13 @@
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
+@font-face {
+    font-family: 'Among Us';
+    src: url('./Impostograph-Regular.ttf') format('truetype'); 
+    font-weight: normal;
+    font-style: normal;
 }
-
 .App-header {
-  background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -36,4 +51,5 @@
   to {
     transform: rotate(360deg);
   }
+}
 }
