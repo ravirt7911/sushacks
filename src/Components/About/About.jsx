@@ -1,5 +1,5 @@
 import React from "react";
-import "./About.scss";
+import "./About.css";
 import team from "../../assets/team.svg";
 import left_pic from "../../assets/left_pic.png";
 import right_pic1 from "../../assets/right_pic1.png";
@@ -8,35 +8,27 @@ import right_pic2 from "../../assets/right_pic2.png";
 function About() {
     const stars = [
         "✨",
+        "💫",
+        "❄️",
+        "🌟",
+        "⭐",
+        "❄️",
+        "❄️",
+        "✨",
         "⭐",
         "💫",
         "❄️",
         "🌟",
         "✨",
-        "⭐",
         "❄️",
         "❄️",
         "🌟",
-        "✨",
         "⭐",
         "💫",
         "❄️",
         "🌟",
-        "✨",
         "⭐",
         "❄️",
-        "❄️",
-        "🌟",
-        "☀️",
-        "⭐",
-        "💫",
-        "❄️",
-        "🌟",
-        "✨",
-        "⭐",
-        "❄️",
-        "🌟",
-        "🌟",
     ];
     const starsBottom = [
         123, 4, 425, 542, 243, -74, 845, 365, 652, 355, -9, 437, 3, 64, 854,
@@ -65,7 +57,7 @@ function About() {
                                 display: "inline",
                                 position: "relative",
                                 left: "0%",
-                                bottom: `${starsBottom[29 - index]}%`,
+                                bottom: `${starsBottom[(index + 8) % 30]}%`,
                             }}
                             key={`${index + 1}`}
                         >
