@@ -4,7 +4,117 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 18px;
+  font-family: "Among Us";
+}
+
+.nav_link {
+  text-decoration: none;
+  font-size: 45px;
+  color: white;
+  padding: 27px;
+  position: relative;
+}
+.nav_link:hover {
+  padding: 8px 12px;
+  font-size: 34px;
+  font-weight: 400;
+  /* background-color: #dddfe1a2;  */
+  text-shadow: 1px 0 10px rgb(240, 230, 27);
+}
+
+.nav-button {
+  padding: 45px;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: black;
+  display: none;
+  opacity: 0;
+}
+
+@media (max-width: 1024px) {
+   .nav-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+  }
+
+  .nav-close{
+    position: relative;
+    top: -38px;
+    right: 75px;
+    padding-bottom: 1px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+  }
+
+  .navbar-container {
+    display: flex;
+    justify-content:flex-end;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 0 20px;
+  }
+
+  .active{
+    color: #88C2BB;
+  }
+  .nav_link {
+    
+    padding: 10px;
+    font-size: 50px;
+  }
+
+  .links{
+    position: relative;
+    top: -65px;
+    right: -2px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+    nav {
+    position: fixed;
+    top: 120px;
+    right: 125px;
+    margin-top: 20px;
+    height: 540px;
+    width: 255px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.01rem;
+    background: linear-gradient(180deg, #000000 1.94%, #151313 101.94%);
+    transition: 1.5s;
+    transform: skew(-40deg) translateX(150vh);
+    background-color: black;
+    border: 6px solid white; /* White border */
+    z-index: 1;
+  }
+  .open {
+    transition: 1s;
+    transform: skewX(7deg);
+  }
+}
+
+/* 
+nav {
+  height: 100px;
+  font-family: 'Among Us';
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   gap: 30px;
+  font-family: "Among Us";
 }
 
 .nav_link {
@@ -19,5 +129,4 @@ nav {
   font-size: 34px;
   font-weight: 400;
   /* background-color: #dddfe1a2;  */
-  text-shadow: 1px 0 10px rgb(240, 230, 27);
-}
+  /* text-shadow: 1px 0 10px rgb(240, 230, 27);  */
