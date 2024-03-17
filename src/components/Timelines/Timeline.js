@@ -14,10 +14,7 @@ import ProgressBar from "@ramonak/react-progress-bar";
 const Timeline = () => {
   const [active, setActive] = useState(0);
   return (
-    <div
-    // className="parentc"
-    // style={{ backgroundImage: `url(${require("../../assets/back.png")})` }}
-    >
+    <div>
       <div className="card__data">
         <h3 className="card__title">TIMELINES</h3>
       </div>
