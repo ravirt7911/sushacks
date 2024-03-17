@@ -12,8 +12,15 @@
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.22.3",
     "react-scripts": "5.0.1",
+<<<<<<< HEAD
     "react-scroll": "^1.9.0",
+=======
+<<<<<<< HEAD
+    "sass": "^1.72.0",
+=======
+>>>>>>> 8ceaf655c4c48ce6487e639a90ce39cc5d3edd24
     "swiper": "^11.0.7",
+>>>>>>> 51b670e4b01eab2421ba2fe15f801936547dbb4b
     "web-vitals": "^2.1.4"
   },
   "scripts": {

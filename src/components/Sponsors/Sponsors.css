@@ -1,0 +1,36 @@
+.sponsers {
+  font-family: "Among Us";
+  height: 100%;
+  display: flex;
+  color: white;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.sponsers .heading {
+  border: 2px solid white;
+  font-size: 50px;
+  padding: 8px;
+  margin-bottom: 45px;
+}
+.sponsers-divs {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+}
+.sponsers-divs p {
+  font-size: 40px;
+}
+.sponsers-imgs {
+  display: flex;
+  justify-content: center;
+  width: 23vw;
+  margin-top: 5px;
+}
+.sponsers-divs .sponsers-imgs a img {
+  background-color: white;
+  border-radius: 5px;
+  width: 140px;
+  height: 40px;
+  margin: 0% 10px;
+}
