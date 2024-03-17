@@ -17,7 +17,7 @@ const Timeline = () => {
    <div className='parentc' style={{backgroundImage:`url(${require('./assets/back.png')})`}}
    >
    <div className="card__data">
-         <h3 className="card__title">TIMELINES</h3>                  
+         <h1 className="card__title" style={{ fontFamily: "'Among Us', sans-serif" ,transform: 'scaleY(1.0)'}}>TIMELINES</h1>                  
     </div>
 
     <div className="progresBar">
@@ -30,7 +30,7 @@ const Timeline = () => {
         grabCursor = {true}
         slidesPerView={1}
         spaceBetween={40}
-        centeredSlides = {false}
+        centeredSlides = {true}
         // style={{backgroundImage:`url(${require('./assets/phn.jpg')})`,objectFit:'contain'}} 
         className='card__container'
         onSlideChange={(e)=>setActive(e.activeIndex)}

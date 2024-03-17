@@ -2,6 +2,13 @@
   text-align: center;
   background-color: bisque;
 }
+:root {
+  --font: "Inconsolata", monospace;
+}
+
+body {
+  font-family: "Among Us";
+}
 
 .App-logo {
   height: 40vmin;

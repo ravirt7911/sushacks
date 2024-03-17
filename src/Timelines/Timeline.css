@@ -26,7 +26,7 @@
   }
   
   body {
-    font-family: 'Among Us';
+    font-family: "Among Us";
     font-size: var(--normal-font-size);
     --font:"Inconsolata", monospace;
     background-color: var(--body-color);
@@ -44,6 +44,7 @@
     
   }
   .parentc{
+    position: relative;
     height: 100vh;
     max-height: 100vh;
   }
@@ -174,6 +175,7 @@ margin-right: 30px;
   .card__title{
     color: var(--white-color);
     margin-bottom: .75rem;
+    font-family: "Among Us";
   }
   
   .card__description {
