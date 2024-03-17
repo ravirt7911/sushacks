@@ -3,7 +3,7 @@ import "./Prizes.css";
 import PrizeMoney from "../../assets/Group 375.svg";
 const Prizes = () => {
   return (
-    <div className="page">
+    <div id="prizes" className="page">
       <div className="prizes">
         <p className="heading">PRIZES</p>
       </div>

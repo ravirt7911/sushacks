@@ -35,7 +35,7 @@ const Tracks = () => {
   const [index, setIndex] = useState(0);
 
   return (
-    <div className="TracksHome">
+    <div id="tracks" className="TracksHome">
       <div className="TracksHeader">
         <div className="TracksIcon">
           <img
