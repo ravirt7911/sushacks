@@ -7,7 +7,7 @@ const Prizes = () => {
       <div className="prizes">
         <p className="heading">PRIZES</p>
       </div>
-      <div>
+      <div className="combined">
         <img src={PrizeMoney} alt="Prizes" className="prize" />
       </div>
     </div>
