@@ -1,15 +1,11 @@
 import "./App.css";
-import Navbar from "./components/nav.jsx";
+import Navbar from "./components/Navbar/Navbar";
 function App() {
   return (
-  <div className="App">
-    < Navbar/>
+    <div className="App">
+      <Navbar />
     </div>
-  )
-
-  return <div className="App">Testing sus hackkkkkkkkkkkkk</div>;
-
-
+  );
 }
 
 export default App;
