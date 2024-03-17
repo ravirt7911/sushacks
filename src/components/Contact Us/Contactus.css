@@ -1,0 +1,12 @@
+.contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.contact-image {
+  width: 80%; /* Adjust width as needed */
+  max-width: 600px; /* Set maximum width */
+  height: auto; /* Maintain aspect ratio */
+}

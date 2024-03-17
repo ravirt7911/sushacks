@@ -1,15 +1,15 @@
 import React from "react";
-import "./sponsers.css";
+import "./Sponsors.css";
 import mongo from "./images/mongo 1.svg";
 import devpost from "./images/dev-removebg-preview 1.svg";
 import polygon from "./images/polygon 1.svg";
 import hedra from "./images/hedra-removebg-preview 1.svg";
 import cloud from "./images/img2-removebg-preview 1.svg";
 
-export default function Sponsers() {
+export default function Sponsors() {
   return (
     <div className="sponsers">
-      <p className="heading">SPONSERS</p>
+      <p className="heading">SPONSORS</p>
       <div className="sponsers-divs">
         <p style={{ color: "#78B4DF" }}>PLATINUM</p>
         <div className="sponsers-imgs">
