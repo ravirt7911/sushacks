@@ -7,10 +7,6 @@ import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import ProgressBar from "@ramonak/react-progress-bar";
-// import { EffectCoverflow, Pagination, Navigation } from 'swiper';
-// import CardHeader from '@mui/material/CardHeader'
-// import Avatar from '@mui/material/Avatar'
-// import IconButton from '@mui/material/IconButton'
 const Timeline = () => {
   const [active, setActive] = useState(0);
   return (

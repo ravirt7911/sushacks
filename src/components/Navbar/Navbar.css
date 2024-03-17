@@ -5,6 +5,7 @@ nav {
   align-items: center;
   justify-content: center;
   gap: 30px;
+  font-family: "Among Us";
 }
 
 .nav_link {
