@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .App {
     text-align: center;
 }
@@ -16,6 +17,8 @@
 .App-header {
     background-color: #282c34;
 }
+=======
+>>>>>>> 8a3272b3a1711c0f729184821d745555d181cf8a
 :root {
     --font: "Inconsolata", monospace;
 }
@@ -40,6 +43,7 @@ body {
 }
 
 @media (prefers-reduced-motion: no-preference) {
+<<<<<<< HEAD
     .App-logo {
         animation: App-logo-spin infinite 20s linear;
     }
@@ -72,6 +76,26 @@ body {
         transform: rotate(360deg);
     }
 }
+=======
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+  @font-face {
+    font-family: "Among Us";
+    src: url("./Impostograph-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+  }
+  .App-header {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+  }
+>>>>>>> 8a3272b3a1711c0f729184821d745555d181cf8a
 
 .App-link {
     color: #61dafb;
@@ -84,4 +108,8 @@ body {
     to {
         transform: rotate(360deg);
     }
+<<<<<<< HEAD
+=======
+  }
+>>>>>>> 8a3272b3a1711c0f729184821d745555d181cf8a
 }
