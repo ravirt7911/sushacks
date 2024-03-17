@@ -3,10 +3,12 @@
     --font:"Inconsolata", monospace;
 }
 
+
 body {
   background-image: url(../src/assets/back.png);
   font-family: 'Among Us';
 }
+
 .App {
   text-align: center;
   background-size: cover;
