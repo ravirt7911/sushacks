@@ -1,7 +1,5 @@
 import React from "react";
 import "./App.css";
-
-import Navbar from "./components/nav.jsx";
 import Sponsers from "./components/sponsers/sponsers.jsx";
 
 import Tracks from './pages/Tracks/Tracks'
@@ -13,12 +11,9 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-
-      <Sponsers/>
-
       <Tracks/>
       <Timeline />
-
+      <Sponsers/>
     </div>
   );
 }

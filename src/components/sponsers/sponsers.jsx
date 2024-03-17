@@ -9,9 +9,9 @@ import cloud from "./images/img2-removebg-preview 1.svg";
 export default function Sponsers() {
   return (
     <div className="sponsers">
-      <h1>SPONSERS</h1>
+      <p className="heading">SPONSERS</p>
       <div className="sponsers-divs">
-        <h3 style={{ color: "#78B4DF" }}>PLATINUM</h3>
+        <p style={{ color: "#78B4DF" }}>PLATINUM</p>
         <div className="sponsers-imgs">
           <a href="#">
             <img src={devpost} />
@@ -22,7 +22,7 @@ export default function Sponsers() {
         </div>
       </div>
       <div className="sponsers-divs">
-        <h3 style={{ color: "#EAD774" }}>GOLD</h3>
+        <p style={{ color: "#EAD774" }}>GOLD</p>
         <div className="sponsers-imgs">
           <a href="#">
             <img src={polygon} />
@@ -33,7 +33,7 @@ export default function Sponsers() {
         </div>
       </div>
       <div className="sponsers-divs">
-        <h3 style={{ color: "#FFFCEA" }}>SILVER</h3>
+        <p style={{ color: "#FFFCEA" }}>SILVER</p>
         <div className="sponsers-imgs">
           <a href="#">
             <img src={hedra} />
