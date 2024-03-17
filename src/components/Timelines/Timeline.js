@@ -46,7 +46,7 @@ const Timeline = () => {
           <SwiperSlide className="card__article">
             <div className="card__image">
               <img
-                src={require("../../assets/back.png")}
+                src={require("../../assets/img_3.png")}
                 className="card__img"
               />
               <div className="card__shadow"></div>
