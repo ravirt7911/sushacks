@@ -38,7 +38,8 @@
   img {
     display: block;
     max-width: 100%;
-    height: auto;
+    height: 200px;
+    
   }
   .parentc{
     height: 100vh;
@@ -68,8 +69,7 @@ border-radius: 1rem;
   }
   
   .card__article {
-    width: 300px; /* Remove after adding swiper js */
-    border-radius: 1.25rem;
+    border-radius: 0rem;
     overflow: hidden;
     transition: transform 1s ease-out;
   }
@@ -93,22 +93,23 @@ border-radius: 1rem;
   
   .card__img {
     width: 180px;
+    height: 250px;
     margin: 0 auto;
     position: relative;
     z-index: 5;
   }
   
   .card__shadow {
-    width: 100px;
+    width: 50px;
     height: 100px;
     background-color: var(--first-color-alt);
-    border-radius: 50%;
+    border-radius: 100%;
     position: absolute;
-    top: 6rem;
+    top: 2rem;
     left: 0;
     right: 0;
     margin-inline: auto;
-    filter: blur(45px);
+    filter: blur(25px);
   }
   
   .card__name {
@@ -153,7 +154,7 @@ border-radius: 1rem;
     height: initial;
     font-size: 3rem;
     color: white;
-    display: none;
+    
   }
   
   .swiper-button-prev {
@@ -220,16 +221,31 @@ border-radius: 1rem;
     }
   }
 
+  .slider-controler {
+    position: relative;
+    bottom: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .slider-controler .swiper-button-next {
+    left: 100% !important;
+    transform: translateX(-100%) !important;
+  }
+
+  .slider-controler .slider-arrow ion-icon {
+    font-size: 2rem;
+    color: white;
+  }
+  
+  .slider-controler .slider-arrow::after {
+    content: '';
+  }
+  
   .swiper-pagination {
     position: relative;
     width: 15rem !important;
     bottom: 1rem;
   }
-  
-  .swiper-pagination .swiper-pagination-bullet {
-    filter: drop-shadow(0px 8px 24px rgba(237, 240, 234, 0.1));
-  }
-  
-  .swiper-pagination .swiper-pagination-bullet-active {
-    background:white;
-  }
+ 

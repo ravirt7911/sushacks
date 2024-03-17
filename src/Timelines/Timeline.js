@@ -17,11 +17,13 @@ const Timeline = () => {
    <div className='parentc' style={{backgroundImage:`url(${require('./assets/back.png')})`}}
    >
    <div className="card__data">
-         <h3 className="card__title">UDAY</h3>                  
+         <h3 className="card__title">TIMELINES</h3>                  
     </div>
+
     <div className="progresBar">
     <ProgressBar  borderRadius='0' animateOnRender = {true}completed={((active+1)*100)/6}  labelColor='green' bgColor='green'/>
     </div>
+    
       <Swiper
         freeMode = {true}
         grabCursor = {true}
@@ -35,6 +37,8 @@ const Timeline = () => {
         pagination={{ el: '.swiper-pagination', clickable: true }}
         autoFocus = {true}
       >
+
+
         
         <div className='card__content' >
             
@@ -47,10 +51,9 @@ const Timeline = () => {
             </div>
 
                 <div className="card__data">
-                        <h3 className="card__name">UDAY</h3>
+                        <h3 className="card__name">Registration Begins</h3>
                         <p className="card__description">
-                           Register
-                           Now
+                           20-04-2024
                         </p>
                  </div>
        </SwiperSlide>
@@ -58,15 +61,15 @@ const Timeline = () => {
        <SwiperSlide className='card__article'>
         
             <div className='card__image'>
-                  <img src={require('./assets/img_2.png')} className='card__img'/>
+                  <img src={require('./assets/img_3.png')} className='card__img'/>
                   <div className="card__shadow"></div>
                 
             </div>
 
                 <div className="card__data">
-                        <h3 className="card__name">UDAY</h3>
+                        <h3 className="card__name">Registration Ends</h3>
                         <p className="card__description">
-                           Register  Now
+                           27-04-2024
                         </p>
                  </div>
 
@@ -77,15 +80,15 @@ const Timeline = () => {
         <SwiperSlide className='card__article '>
         
             <div className='card__image'>
-                  <img src={require('./assets/img_2.png')} className='card__img'/>
+                  <img src={require('./assets/img_3.png')} className='card__img'/>
                   <div className="card__shadow"></div>
                 
             </div>
 
                 <div className="card__data">
-                        <h3 className="card__name">UDAY</h3>
+                        <h3 className="card__name">Project Submission</h3>
                         <p className="card__description">
-                           Register Now
+                          29-04-2024
                         </p>
                  </div>
 
@@ -102,10 +105,25 @@ const Timeline = () => {
             </div>
 
                 <div className="card__data">
-                        <h3 className="card__name">UDAY</h3>
+                        <h3 className="card__name">Registration Begins</h3>
                         <p className="card__description">
-                           Register
-                           Now
+                           20-04-2024
+                        </p>
+                 </div>
+       </SwiperSlide>
+
+       <SwiperSlide className='card__article'>
+        
+            <div className='card__image'>
+                  <img src={require('./assets/img_3.png')} className='card__img'/>
+                  <div className="card__shadow"></div>
+                
+            </div>
+
+                <div className="card__data">
+                        <h3 className="card__name">Registration Ends</h3>
+                        <p className="card__description">
+                           27-04-2024
                         </p>
                  </div>
 
@@ -113,50 +131,36 @@ const Timeline = () => {
             
         </SwiperSlide>
 
-        <SwiperSlide className='card__article'>
+        <SwiperSlide className='card__article '>
         
-        <div className='card__image'>
-              <img src={require('./assets/img_2.png')} className='card__img'/>
-              <div className="card__shadow"></div>
+            <div className='card__image'>
+                  <img src={require('./assets/img_3.png')} className='card__img'/>
+                  <div className="card__shadow"></div>
+                
+            </div>
+
+                <div className="card__data">
+                        <h3 className="card__name">Project Submission</h3>
+                        <p className="card__description">
+                          29-04-2024
+                        </p>
+                 </div>
+
+                
             
+        </SwiperSlide>
+
+   
         </div>
 
-            <div className="card__data">
-                    <h3 className="card__name">UDAY</h3>
-                    <p className="card__description">
-                       Register
-                       Now
-                    </p>
-             </div>
-
-            
-        
-    </SwiperSlide>
-
-    <SwiperSlide className='card__article'>
-        
-        <div className='card__image'>
-              <img src={require('./assets/img_2.png')} className='card__img'/>
-              <div className="card__shadow"></div>
-            
-        </div>
-
-            <div className="card__data">
-                    <h3 className="card__name">UDAY</h3>
-                    <p className="card__description">
-                       Register
-                       Now
-                    </p>
-             </div>
-
-            
-        
-    </SwiperSlide>
-
-    <div className="swiper-button-next">
-               <i className="ri-arrow-right-s-line"></i>
-      </div>
-
+        <div className="slider-controler">
+          <div className="swiper-button-prev slider-arrow">
+            <ion-icon name="arrow-back-outline"></ion-icon>
+          </div>
+          <div className="swiper-button-next slider-arrow">
+            <ion-icon name="arrow-forward-outline"></ion-icon>
+          </div>
+          <div className="swiper-pagination"></div>
         </div>
 
 
