@@ -8,6 +8,7 @@ import Tracks from "./components/Tracks/Tracks.js";
 import Navbar from "./components/Navbar/Navbar.js";
 import About from "./components/About/About.jsx";
 import Faqs from "./components/FAQs/Faqs.js";
+// import Timeline from "./components/Timelines/Timeline.js";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Navbar />
       <About />
       <Tracks />
+      {/* <Timeline /> */}
       <Prizes />
       <Sponsors />
       <Faqs />
