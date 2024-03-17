@@ -3,8 +3,11 @@ import Timeline from "./Timelines/Timeline";
 
 function App() {
 
-  return <div className="App">Testing sus hackkkkkkkkkkkkk</div>;
-
+  return (
+  <div className="App">
+  <Timeline/>
+    </div>
+  )
 }
 
 export default App;
