@@ -14,10 +14,7 @@ import ProgressBar from "@ramonak/react-progress-bar";
 const Timeline = () => {
   const [active, setActive] = useState(0);
   return (
-    <div
-      className="parentc"
-      style={{ backgroundImage: `url(${require("../../assets/back.png")})` }}
-    >
+    <div>
       <div className="card__data">
         <h3 className="card__title">TIMELINES</h3>
       </div>
@@ -49,7 +46,7 @@ const Timeline = () => {
           <SwiperSlide className="card__article">
             <div className="card__image">
               <img
-                src={require("../../assets/back.png")}
+                src={require("../../assets/img_3.png")}
                 className="card__img"
               />
               <div className="card__shadow"></div>

@@ -1,9 +1,28 @@
+
 :root {
     --font:"Inconsolata", monospace;
 }
+
+body {
+  background-image: url(../src/assets/back.png);
+  font-family: 'Among Us';
+}
 .App {
-    text-align: center;
-    background-color: bisque;
+  text-align: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-family: sans-serif;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
   }
 @font-face {
     font-family: 'Among Us';
@@ -11,31 +30,26 @@
     font-weight: normal;
     font-style: normal;
 }
-body{
-    font-family: 'Among Us';
-}
-
-nav {
-  background-color: black;
-  height: 100px;
-  width: 100%;
+.App-header {
+  min-height: 100vh;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 30px;
+  font-size: calc(10px + 2vmin);
+  color: white;
 }
 
-.nav_link {
-  text-decoration: none;
-  font-size: 30px;
-  color: white;
-  padding: 30px;
-  position: relative;
+.App-link {
+  color: #61dafb;
 }
-.nav_link:hover {
-  padding: 8px 12px;
-  font-size: 34px;
-  font-weight: 400;
-  /* background-color: #dddfe1a2;  */
-  text-shadow: 1px 0 10px rgb(240, 230, 27);
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 }
