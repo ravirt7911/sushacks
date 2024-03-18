@@ -1,4 +1,5 @@
-.sponsers {
+.sponsors {
+  position: relative;
   font-family: "Among Us";
   height: 100%;
   display: flex;
@@ -7,13 +8,13 @@
   justify-content: center;
   align-items: center;
 }
-.sponsers .heading {
+.sponsors .heading {
   border: 2px solid white;
   font-size: 50px;
   padding: 8px;
   margin-bottom: 45px;
 }
-.sponsers-divs {
+.sponsors-divs {
   display: flex;
   flex-direction: column;
   padding: 15px;
@@ -27,22 +28,27 @@
     box-shadow: 0 0 20px #fff, 0 0 40px #fff, 0 0 60px #fff;
   }
 }
-.sponsers-divs p {
+.sponsors-divs p {
   font-size: 40px;
   text-shadow: 0px 0px 17px blue;
   color: white;
 }
 
-.sponsers-imgs {
+.sponsors-imgs {
   display: flex;
   justify-content: center;
   width: 23vw;
   margin-top: 5px;
 }
-.sponsers-divs .sponsers-imgs a img {
+.sponsors-divs .sponsors-imgs a img {
   background-color: white;
   border-radius: 5px;
   width: 140px;
   height: 80px;
   margin: 0% 10px;
+}
+.sponsors #angel {
+  position: absolute;
+  bottom: 81%;
+  left: 50.5%;
 }
