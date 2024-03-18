@@ -1,105 +1,107 @@
-.home-about{
-    margin-top: 5px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-
+.home-about {
+  margin-top: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
 
 .planet {
-    position: relative;
-    height: 909px;
+  position: relative;
+  height: 909px;
 }
 
-.about-content p{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -700%);
-    z-index: 1; 
-    color: white;
-    text-align: center;
-    font-size: 100px;
-    font-family: "among us";
-    letter-spacing: 7px;
+.about-content p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -700%);
+  z-index: 1;
+  color: white;
+  text-align: center;
+  font-size: 100px;
+  font-family: "among us";
+  letter-spacing: 7px;
 }
 
- #content{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-40%, -280%);
-    width: 80%;
-    z-index: 1;
-    color: rgb(203, 200, 200);
-    text-align: left;
-    /* text-align: center; */
-    font-size: 21px;
-    font-family: var(--font);
-    letter-spacing: 1.2px;
-    align-content:first baseline;
-    width: 588px;
-    height: 136px;
+#content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-40%, -280%);
+  width: 80%;
+  z-index: 1;
+  color: white;
+  text-align: left;
+  /* text-align: center; */
+  font-size: 21px;
+  font-family: var(--font);
+  letter-spacing: 1.2px;
+  align-content: first baseline;
+  width: 588px;
+  height: 136px;
 }
 
-.single-container{
-    position: relative;
-    bottom: 157px;
-    width: 163px;
-    left: -77px;
+.single-container {
+  position: relative;
+  bottom: 157px;
+  width: 163px;
+  left: -77px;
 }
 
-.amongus-container{
-    position: relative;
-    bottom: 424px;
-    width: 190px;
-    right: -837px;
+.amongus-container {
+  position: relative;
+  bottom: 424px;
+  width: 190px;
+  right: -837px;
 }
 
-.crew img{
-    position: relative;
-    top: -19px;
-    width: 580px;
-    height: 300px;
+.crew img {
+  position: relative;
+  top: -19px;
+  width: 580px;
+  height: 300px;
+  opacity: 8;
 }
 
 .planet img {
-    position: relative;
-    top: -250px;
-    z-index: -1;
-    width: 100%;
-    height: 100%;
+  position: relative;
+  top: -250px;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
 }
 
-.planetCroped{
-    display: none;
+.planetCroped {
+  display: none;
 }
 
 @media (max-width: 1024px) {
-    .amongus,.single{
-        display: none;
-    }
-    .about-content p{
-        transform: translate(-50%, -500%);
-    }
-    #content{
-        transform: translate(-40%, -150%);
-    }
+  .amongus,
+  .single {
+    display: none;
+  }
+  .about-content p {
+    transform: translate(-50%, -500%);
+  }
+  #content {
+    transform: translate(-40%, -150%);
+  }
 }
 @media (max-width: 850px) {
-    .amongus,.single{
-        display: none;
-    }
-    .planet img {
-        display: none;
-    }
-    .planet{
-        width: 100px;
-        height: 100px;
-    }
-    .planetCroped {
+  .amongus,
+  .single {
+    display: none;
+  }
+  .planet img {
+    display: none;
+  }
+  .planet {
+    width: 100px;
+    height: 100px;
+  }
+  .planetCroped {
     display: block;
     position: relative;
     top: -160px;
@@ -107,26 +109,24 @@
     width: 100%;
     height: 100%;
     background-size: cover;
-    }
-    .crew img{
-        position: relative;
-        top: 9px;
-        z-index: 1;
-        width: 725px;
-        height: 450px;
-    }
-    .about-content p{
-        position: relative;
-        /* top: 50%;
+  }
+  .crew img {
+    position: relative;
+    top: 9px;
+    z-index: 1;
+    width: 725px;
+    height: 450px;
+  }
+  .about-content p {
+    position: relative;
+    /* top: 50%;
         left: 50%; */
-        transform: translate(-50%, -1200%);
-    }
-    #content{
-        position: relative;
-        transform: translate(-40%, -800%);
-    }
+    transform: translate(-50%, -1200%);
+  }
+  #content {
+    position: relative;
+    transform: translate(-40%, -800%);
+  }
 }
 @media (min-width: 361px) and (max-width: 799px) {
-
-
 }

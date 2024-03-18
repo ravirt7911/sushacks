@@ -19,19 +19,19 @@ function About() {
       </div>
       <div className="planetCroped">
         <img src={planetCroped} alt="planetCroped" className="planetCroped" />
-        </div>
+      </div>
       <div className="planet">
         <img src={Planet} alt="planet" className="planet" />
         <div className="about-content">
           <p>About</p>
           <p id="content">{aboutContent}</p>
         </div>
-        <div className="single-container">
-        <img src={single} alt="single" className="single" />
-      </div>
-      <div className="amongus-container">
-        <img src={Amongus} alt="amongus" className="amongus" />
-      </div>
+        {/* <div className="single-container">
+        <img src={single} alt="single" className="single" /> */}
+        {/* </div> */}
+        {/* <div className="amongus-container">
+          <img src={Amongus} alt="amongus" className="amongus" />
+        </div> */}
       </div>
     </div>
   );
