@@ -16,6 +16,7 @@ nav {
   color: white;
   padding: 27px;
   position: relative;
+  cursor: pointer;
 }
 
 .nav-button {
