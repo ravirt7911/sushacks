@@ -6,6 +6,13 @@
     height: 40vmin;
     pointer-events: none;
 }
+:root {
+  --font: "Inconsolata", monospace;
+}
+
+body {
+  font-family: "Among Us";
+}
 
 @media (prefers-reduced-motion: no-preference) {
     .App-logo {

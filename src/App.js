@@ -1,3 +1,5 @@
+
+
 import React from "react";
 import "./App.css";
 
@@ -9,7 +11,7 @@ import Home from "./components/Home/Home.jsx";
 import Navbar from "./components/Navbar/Navbar.js";
 import About from "./components/About/About.jsx";
 import Faqs from "./components/FAQs/Faqs.js";
-// import Timeline from "./components/Timelines/Timeline.js";
+ import Timeline from "./components/Timeline/Timeline.js";
 
 function App() {
   return (
@@ -18,8 +20,8 @@ function App() {
       <Home />
       <About />
       <Tracks />
-      {/* <Timeline /> */}
       <Prizes />
+      <Timeline />
       <Sponsors />
       <Faqs />
       <Contact />
