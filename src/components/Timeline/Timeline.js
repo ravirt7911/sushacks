@@ -6,6 +6,7 @@ import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
+import { EffectCoverflow, Pagination, Navigation} from 'swiper/modules'
 const Timeline = () => {
   const data = [
     {
@@ -63,8 +64,15 @@ const Timeline = () => {
              grabCursor = {true}
              className='card__container'
              centeredSlides = {true}
+             modules={[EffectCoverflow, Pagination, Navigation]}
              onSlideChange={(e)=>setActive(e.activeIndex)}
         onActiveIndexChange={(e)=>console.log(e)}
+        coverflowEffect={{
+          rotate: 10,
+          stretch: 0,
+          depth: 100,
+          modifier: 2.5,
+        }}
         pagination = {{
           el: "swiper-pagination",
           clickable: true,
