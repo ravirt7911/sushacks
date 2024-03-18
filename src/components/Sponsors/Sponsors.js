@@ -11,7 +11,7 @@ export default function Sponsors() {
     <div id="sponsors" className="sponsers">
       <p className="heading">SPONSORS</p>
       <div className="sponsers-divs">
-        <p style={{ color: "#78B4DF" }}>PLATINUM</p>
+        <p style={{ color: "#78B4DF", fontSize: "60px" }}>PLATINUM</p>
         <div className="sponsers-imgs">
           <a href="#">
             <img src={devpost} />
@@ -22,7 +22,7 @@ export default function Sponsors() {
         </div>
       </div>
       <div className="sponsers-divs">
-        <p style={{ color: "#EAD774" }}>GOLD</p>
+        <p style={{ color: "#EAD774", fontSize: "60px" }}>GOLD</p>
         <div className="sponsers-imgs">
           <a href="#">
             <img src={polygon} />
@@ -33,7 +33,7 @@ export default function Sponsors() {
         </div>
       </div>
       <div className="sponsers-divs">
-        <p style={{ color: "#FFFCEA" }}>SILVER</p>
+        <p style={{ color: "#FFFCEA", fontSize: "60px" }}>SILVER</p>
         <div className="sponsers-imgs">
           <a href="#">
             <img src={hedra} />

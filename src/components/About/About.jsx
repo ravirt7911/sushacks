@@ -3,8 +3,6 @@ import "./About.css";
 import Crew from "../../assets/amongus-crew.png";
 import Planet from "../../assets/planet.png";
 import planetCroped from "../../assets/planet_croped.png";
-import Amongus from "../../assets/Among_us.png";
-import single from "../../assets/amongus-single.png";
 
 function About() {
   const aboutContent = `Unleash your creativity and be a part of Rebase<01>,
