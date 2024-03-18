@@ -1,14 +1,87 @@
+/* Center the .faqs container */
 .faqs {
   font-family: "Among Us";
   color: white;
+  display: flex; /* Use flexbox */
+  flex-direction: column; /* Stack items vertically */
+  justify-content: center; /* Center vertically */
+  align-items: center; /* Center horizontally */ /* Make it take the full height of the viewport */
 }
 
-.faqs h1 {
-  height: 100%;
+.content h1 {
   display: flex;
   color: white;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   font-weight: normal;
+  font-size: 60px;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image {
+  width: 100px;
+  height: auto;
+  margin-right: 10px;
+  margin-bottom: 30px;
+}
+
+.accordion-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 50px; /* Initial height */
+  width: 800px;
+  background-size: cover;
+  background-position: center;
+  background-color: grey;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  overflow: hidden; /* Hide overflow when height changes */
+  transition: height 0.3s; /* Smooth transition */
+}
+
+.accordion-item {
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  width: 100%; /* Ensure toggle button takes full width */
+}
+
+.question {
+  color: white;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+}
+
+.toggle-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.answer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 0; /* Initial height */
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-color: grey;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  font-size: 30px;
+  transition: height 0.3s; /* Smooth transition */
 }
