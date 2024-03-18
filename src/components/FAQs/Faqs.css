@@ -35,23 +35,24 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  height: 50px; /* Initial height */
+  align-items: left;
+  height: 50px;
   width: 800px;
   background-size: cover;
   background-position: center;
-  background-color: grey;
   margin-bottom: 20px;
   border-radius: 20px;
-  overflow: hidden; /* Hide overflow when height changes */
-  transition: height 0.3s; /* Smooth transition */
+  overflow: hidden;
+  transition: height 0.3s;
 }
 
 .accordion-item {
   position: relative;
-  justify-content: center;
   align-items: center;
-  width: 100%; /* Ensure toggle button takes full width */
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .question {
@@ -59,6 +60,7 @@
   justify-content: center;
   align-items: center;
   font-size: 30px;
+  flex-grow: 1;
 }
 
 .toggle-button {
@@ -84,4 +86,13 @@
   border-radius: 20px;
   font-size: 30px;
   transition: height 0.3s; /* Smooth transition */
+  display: none;
+}
+
+.accordion-container.expanded {
+  height: 150px; /* Adjust the height as needed */
+}
+
+.accordion-container.expanded .answer {
+  display: block;
 }
