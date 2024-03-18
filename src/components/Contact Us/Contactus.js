@@ -3,7 +3,7 @@ import contactUsImage from "../../assets/Contact us.svg"; // Import your contact
 
 function Contact() {
   return (
-    <div className="contact-container">
+    <div id="faq" className="contact-container">
       <img src={contactUsImage} alt="Contact Us" className="contact-image" />
     </div>
   );

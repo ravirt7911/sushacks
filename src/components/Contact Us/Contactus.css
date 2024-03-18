@@ -6,7 +6,6 @@
 }
 
 .contact-image {
-  width: 80%; /* Adjust width as needed */
-  max-width: 600px; /* Set maximum width */
-  height: auto; /* Maintain aspect ratio */
+  max-width: 300px;
+  height: 300px;
 }

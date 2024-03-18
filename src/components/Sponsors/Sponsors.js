@@ -8,7 +8,7 @@ import cloud from "./images/img2-removebg-preview 1.svg";
 
 export default function Sponsors() {
   return (
-    <div className="sponsers">
+    <div id="sponsors" className="sponsers">
       <p className="heading">SPONSORS</p>
       <div className="sponsers-divs">
         <p style={{ color: "#78B4DF" }}>PLATINUM</p>
