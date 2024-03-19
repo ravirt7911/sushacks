@@ -1,11 +1,44 @@
 .contact-container {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
+  flex-direction: column;
 }
 
 .contact-image {
   max-width: 300px;
   height: 300px;
+  position: relative;
 }
+
+/* Adjust the position of the Instagram image */
+#insta {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  transform: translate(50%, -50%);
+}
+
+/*
+.contact-container .linkedin {
+  position: absolute;
+  bottom: 75%;
+  left: 3%;
+}
+.contact-container .discord {
+  position: absolute;
+  bottom: 75%;
+  left: 3%;
+}
+.contact-container .twitter {
+  position: absolute;
+  bottom: 75%;
+  left: 3%;
+}
+.contact-container .mail {
+  position: absolute;
+  bottom: 75%;
+  left: 3%;
+} */

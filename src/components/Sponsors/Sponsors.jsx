@@ -11,7 +11,7 @@ export default function Sponsors() {
   return (
     <div id="sponsors" className="sponsors">
       <p className="heading">SPONSORS</p>
-      <img id="angel" src={angelImg} height="170px"/>
+      <img id="angel" src={angelImg} height="180px" />
       <div className="sponsors-divs">
         <p style={{ color: "#78B4DF", fontSize: "60px" }}>PLATINUM</p>
         <div className="sponsors-imgs">
