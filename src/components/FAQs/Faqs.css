@@ -5,7 +5,7 @@
   display: flex; /* Use flexbox */
   flex-direction: column; /* Stack items vertically */
   justify-content: center; /* Center vertically */
-  align-items: center; /* Center horizontally */ /* Make it take the full height of the viewport */
+  align-items: center;
 }
 
 .content h1 {
