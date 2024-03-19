@@ -1,7 +1,6 @@
 .home-container {
   /* margin: 25px 100px; */
-  margin-left: 500px;
-  display: flex;
+  /* margin-left: 500px; */
   justify-content: space-between;
   align-items: last baseline;
   gap: 20px;
@@ -14,11 +13,12 @@
 
 .logo {
   padding: 40px;
+  margin-right: 500px;
 }
 
 .start {
-  margin-right: 600px;
   position: relative;
+  padding: 40px;
 }
 
 .register {
