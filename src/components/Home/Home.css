@@ -1,77 +1,76 @@
-.home-container{
-    margin: 25px 100px;
+.home-container {
+  /* margin: 25px 100px; */
+  margin-left: 500px;
+  display: flex;
+  justify-content: space-between;
+  align-items: last baseline;
+  gap: 20px;
+}
+
+.susHacks {
+  width: 370px;
+  height: 389px;
+}
+
+.logo {
+  padding: 40px;
+}
+
+.start {
+  margin-right: 600px;
+  position: relative;
+}
+
+.register {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "among us";
+  font-weight: 700;
+  color: black;
+  text-decoration: none;
+  font-size: 86px;
+  padding: 10px 20px;
+  margin-left: -19px;
+  text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white,
+    1px 1px 0 white;
+}
+
+@media (max-width: 1024px) {
+  .home-container {
     /* margin-left: 20px; */
+    margin-top: -107px;
     display: flex;
     justify-content: space-between;
     align-items: last baseline;
-    gap: 20px;
-}
-
-.susHacks{
-    width: 370px;
-    height: 389px;
-}
-
-.start{
-    position: relative;
-}
-
-.discord-link, .devpost-link{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-family: "among us";
-    font-weight: 700;
-    color: black;
-    text-decoration: none;
-    font-size: 86px;
-    padding: 10px 20px;
-    margin-left: -19px;
-    text-shadow: 
-    -1px -1px 0 white,
-     1px -1px 0 white,
-    -1px  1px 0 white,
-     1px  1px 0 white; 
   }
-
-  
-@media (max-width: 1024px) {
-    .home-container{
-       /* margin-left: 20px; */
-       margin-top: -107px;
-       display: flex;
-       justify-content: space-between;
-       align-items: last baseline;
-    }
-    .susHacks{
-        width: 220px;
-        height: 240px;
-    }
-    .start{
-        bottom:-70px;
-        margin-bottom: 60px;
-    }
-    .start .start-discord,.start-devpost{
-        width: 150px;
-        height: 80px;
-    }
-    .discord-link, .devpost-link{
-        font-size: 65px;
-        padding: 10px 20px;
-        margin-left: -10px;
-    }
-    
+  .susHacks {
+    width: 220px;
+    height: 240px;
+  }
+  .start {
+    bottom: -70px;
+    margin-bottom: 60px;
+  }
+  .start .start-register {
+    width: 150px;
+    height: 80px;
+  }
+  .register {
+    font-size: 65px;
+    padding: 10px 20px;
+    margin-left: -10px;
+  }
 }
 
 @media (min-width: 361px) and (max-width: 799px) {
-    .home-container{
-      display: flex;
-      justify-content: space-between;
-      align-items: last baseline;
-      margin-left: -1px;
-      margin-top: -55px;
-      gap: 20px;
-    }
-        
+  .home-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: last baseline;
+    margin-left: -1px;
+    margin-top: -55px;
+    gap: 20px;
+  }
 }

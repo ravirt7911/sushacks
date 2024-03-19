@@ -48,7 +48,7 @@ const Timeline = () => {
   ];
   const [active, setActive] = useState(0);
   return (
-    <div className="container">
+    <div className="container" id="timeline">
       <div className="card__data">
         <h3 className="card__n">TimeLine</h3>
       </div>
