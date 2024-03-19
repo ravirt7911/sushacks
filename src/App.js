@@ -1,3 +1,5 @@
+
+
 import React from "react";
 import "./App.css";
 import Tracks from "./components/Tracks/Tracks";
@@ -9,6 +11,9 @@ import Sponsors from "./components/Sponsors/Sponsors.jsx";
 import Contact from "./components/Contact Us/Contactus.jsx";
 import Faqs from "./components/FAQs/Faqs.js";
 
+import Timeline from "./components/Timeline/Timeline.js";
+
+
 function App() {
   return (
     <div className="App">
@@ -17,6 +22,8 @@ function App() {
       <About />
       <Tracks />
       {/* <Timeline /> */}
+      <Prizes />
+      <Timeline />
       <Sponsors />
       <Faqs/>
       <Contact />
