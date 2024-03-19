@@ -35,8 +35,11 @@
   margin-left: -19px;
   text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white,
     1px 1px 0 white;
+  transition: color 0.3s;
 }
-
+.register:hover {
+  color: lightblue; /* Change color on hover */
+}
 @media (max-width: 1024px) {
   .home-container {
     /* margin-left: 20px; */
