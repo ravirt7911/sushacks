@@ -24,10 +24,29 @@ nav {
   cursor: pointer;
   background: transparent;
   border: none;
-  outline: none;
+  /* outline: none; */
   color: black;
   display: none;
   opacity: 0;
+}
+
+@media (min-width: 361px) and (max-width: 799px) {
+  .navbar-container {
+    padding: 20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap: 20px;
+  }
+  .nav-close {
+    position: relative;
+    top: 38px;
+    right: 75px;
+    padding-bottom: 1px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -99,12 +118,4 @@ nav {
   }
 }
 
-@media (min-width: 361px) and (max-width: 799px) {
-  .navbar-container {
-    padding: 20px;
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    gap: 20px;
-  }
-}
+

@@ -2,16 +2,17 @@
 
 import React from "react";
 import "./App.css";
-
-import Sponsors from "./components/Sponsors/Sponsors.js";
-import Contact from "./components/Contact Us/Contactus.js";
-import Prizes from "./components/Prizes/Prizes.js";
-import Tracks from "./components/Tracks/Tracks.js";
+import Tracks from "./components/Tracks/Tracks";
+import Navbar from "./components/Navbar/Navbar";
+// import Timeline from "./components/Timelines/Timeline.jsx";
 import Home from "./components/Home/Home.jsx";
-import Navbar from "./components/Navbar/Navbar.js";
 import About from "./components/About/About.jsx";
+import Sponsors from "./components/Sponsors/Sponsors.jsx";
+import Contact from "./components/Contact Us/Contactus.jsx";
 import Faqs from "./components/FAQs/Faqs.js";
- import Timeline from "./components/Timeline/Timeline.js";
+
+import Timeline from "./components/Timeline/Timeline.js";
+
 
 function App() {
   return (
@@ -20,10 +21,11 @@ function App() {
       <Home />
       <About />
       <Tracks />
+      {/* <Timeline /> */}
       <Prizes />
       <Timeline />
       <Sponsors />
-      <Faqs />
+      <Faqs/>
       <Contact />
     </div>
   );

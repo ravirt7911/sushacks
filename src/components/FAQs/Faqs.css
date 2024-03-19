@@ -77,15 +77,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 0; /* Initial height */
+  height: 15px;
   width: 100%;
   background-size: cover;
   background-position: center;
-  background-color: grey;
   margin-bottom: 20px;
   border-radius: 20px;
   font-size: 30px;
-  transition: height 0.3s; /* Smooth transition */
+  transition: height 0.3s;
   display: none;
 }
 
@@ -95,4 +94,8 @@
 
 .accordion-container.expanded .answer {
   display: block;
+}
+.ques {
+  height: 65px;
+  background-image: url("../../assets/Rectangle\ 152.svg");
 }
