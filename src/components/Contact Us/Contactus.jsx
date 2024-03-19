@@ -5,6 +5,7 @@ import linkedin from "../../assets/linkedin.svg";
 import twitter from "../../assets/twitter.svg";
 import mail from "../../assets/Mail.svg";
 import discord from "../../assets/discord.svg";
+import "./Contactus.css";
 
 function Contact() {
   return (
@@ -13,9 +14,9 @@ function Contact() {
       <a
         href="Instagram - https://www.instagram.com/sus_hacks_viit?igsh=OHY1cTI0dzNtNjYz"
         target="_blank"
-        rel="noopener noreferrer"
+        rel="noopener noreferrer" id="insta"
       >
-        <img src={insta} alt="insta" id="insta" />
+        <img src={insta} alt="insta" />
       </a>
       <a
         href="https://www.linkedin.com/in/sus-hacks-viit-4310542bb/"
