@@ -13,7 +13,7 @@ export default function Sponsors() {
       <p className="heading">SPONSORS</p>
       <img id="angel" src={angelImg} height="180px" />
       <div className="sponsors-divs">
-        <p style={{ color: "#78B4DF", fontSize: "60px" }}>PLATINUM</p>
+        <p style={{ color: "#78B4DF", fontSize: "100px" }}>PLATINUM</p>
         <div className="sponsors-imgs">
           <a href="#">
             <img src={devpost} />
@@ -24,7 +24,7 @@ export default function Sponsors() {
         </div>
       </div>
       <div className="sponsors-divs">
-        <p style={{ color: "#EAD774", fontSize: "60px" }}>GOLD</p>
+        <p style={{ color: "#EAD774", fontSize: "100px" }}>GOLD</p>
         <div className="sponsors-imgs">
           <a href="#">
             <img src={polygon} />
@@ -35,7 +35,7 @@ export default function Sponsors() {
         </div>
       </div>
       <div className="sponsors-divs">
-        <p style={{ color: "#FFFCEA", fontSize: "60px" }}>SILVER</p>
+        <p style={{ color: "#FFFCEA", fontSize: "100px" }}>SILVER</p>
         <div className="sponsors-imgs">
           <a href="#">
             <img src={hedra} />
