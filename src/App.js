@@ -14,15 +14,15 @@ import Timeline from "./components/Timeline/Timeline.js";
 function App() {
   return (
     <div className="App">
-      <Navbar />
-      <Home />
+      {/*<Navbar />
+      <Home />*/}
       <About />
-      <Tracks />
+      {/*<Tracks />
       <Timeline />
       <Prizes />
       <Sponsors />
       <Faqs />
-      <Contact />
+  <Contact />*/}
     </div>
   );
 }
