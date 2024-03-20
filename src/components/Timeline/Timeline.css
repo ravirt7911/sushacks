@@ -1,8 +1,22 @@
-.timeline-container {
+
+.timeline {
+  position: relative;
   font-family: "among us";
   color: white;
 }
-
+.timeline .timeline-bx h2{
+  font-family: "among us";
+  color: white;
+}
+.timeline-slider .item h5{
+  color: white;
+}
+.timeline-container h1
+{
+  font-family: 'among Us';
+  color:aliceblue;
+  
+}
 .timeline-heading {
   font-size: 100px;
   font-weight: normal;

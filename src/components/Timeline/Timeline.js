@@ -1,51 +1,75 @@
-import React from "react";
-import "./Timeline.css";
+import { Col, Container, Row } from "react-bootstrap";
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
 
 const Timeline = () => {
-  const data = [
-    {
-      Heading: "Registration Begins",
-      Time: "20-03-2024",
+  const responsive = {
+    superLargeDesktop: {
+      // the naming can be any, depends on you.
+      breakpoint: { max: 4000, min: 3000 },
+      items: 5,
     },
-    {
-      Heading: "Registration Ends",
-      Time: "26-03-2024",
+    desktop: {
+      breakpoint: { max: 3000, min: 1024 },
+      items: 3,
     },
-    {
-      Heading: "Project Submission",
-      Time: "29-04-2024",
+    tablet: {
+      breakpoint: { max: 1024, min: 464 },
+      items: 2,
     },
-    {
-      Heading: "Hackathon day",
-      Time: "14-04-2024",
+    mobile: {
+      breakpoint: { max: 464, min: 0 },
+      items: 1,
     },
-    {
-      Heading: "Lunch Time",
-      Time: "14-04-2024 1:00pm",
-    },
-    {
-      Heading: "Dinner",
-      Time: "14-04-24 8:00pm",
-    },
-    {
-      Heading: "Snacks",
-      Time: "14-04-24 5:00pm",
-    },
-    {
-      Heading: "Breakfast",
-      Time: "15-04-24 9:00am",
-    },
-    {
-      Heading: "Prize Announcement",
-      Time: "15-04-2024",
-    },
-  ];
+  };
 
   return (
-    <div className="timeline-container">
-      <h1 className="timeline-heading">Timeline</h1>
+    <div className="timeline">
+      <Container>
+        <Row>
+          <Col>
+            <div className="timeline-bx">
+              <h2>TIMELINE</h2>
+              <Carousel
+                responsive={responsive}
+                infinite={true}
+                className="timeline-slider"
+              >
+                <div className="item">
+                  <h5 style={{color:"white"}}>Python</h5>
+                </div>
+                <div className="item">
+                  
+                  <h5>HTML & CSS & JS</h5>
+                </div>
+                <div className="item">
+                  
+                  <h5>Competetive Programming</h5>
+                </div>
+                <div className="item">
+                  <h5>Problem Solving</h5>
+                </div>
+                <div className="item">
+                  <h5>Data Structures and Algorithms</h5>
+                </div>
+                <div className="item">
+                  <h5>ReactJS</h5>
+                </div>
+                <div className="item">
+                  <h5>Machine Learning</h5>
+                </div>
+                <div className="item">
+                  <h5>Data Science</h5>
+                </div>
+                <div className="item">
+                  <h5>Cloud Computing</h5>
+                </div>
+              </Carousel>
+            </div>
+          </Col>
+        </Row>
+      </Container>
     </div>
   );
 };
-
 export default Timeline;
