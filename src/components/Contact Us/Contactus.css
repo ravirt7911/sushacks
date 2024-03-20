@@ -20,26 +20,26 @@
   transform: translate(50%, -50%);
 }
 
-#linkedin{
+#linkedin {
   position: absolute;
   top: 73%;
   right: 25%;
   transform: translate(50%, -50%);
 }
 
-#mail{
+#mail {
   position: absolute;
   top: 76%;
   left: 13%;
   transform: translate(50%, -50%);
 }
-#twitter{
+#twitter {
   position: absolute;
   top: 118%;
   left: 19%;
   transform: translate(50%, -50%);
 }
-#discord{
+#discord {
   position: absolute;
   top: 118%;
   right: 30%;
