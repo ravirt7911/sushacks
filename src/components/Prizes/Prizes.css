@@ -2,12 +2,56 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  /* width: 100vw; */
   justify-content: center;
   font-family: "Among us";
+  margin-left: 5%;
   color: white;
   font-size: 100px;
 }
 
 .prizes {
   display: flex;
+  justify-content: center;
 }
+.prizes {
+  padding-right: 2%;
+  width: 8vw;
+}
+
+.prize-details{
+  width:65vw;
+}
+
+
+
+@media only screen and (max-width: 468px) {
+  .prize-details {
+    width: 10px;
+  }
+  .prizes{
+    width: 30px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  /* Styles for small devices */
+  .prize-details {
+    width: 90vw;
+    display: flex;
+    justify-content: center;
+  }
+  .prizes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .prizes p{
+    font-size: 70px;
+  }
+  .prize{
+    width: 80px;
+    margin-right: 4%;
+  }
+}
+

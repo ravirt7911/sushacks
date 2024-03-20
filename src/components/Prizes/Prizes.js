@@ -10,7 +10,7 @@ const Prizes = () => {
         <p className="heading">PRIZES</p>
       </div>
       <div className="combined">
-        <img src={PrizeMoney} alt="Prizes" className="prize" />
+        <img src={PrizeMoney} alt="Prizes" className="prize-details" />
       </div>
     </div>
   );

@@ -1,7 +1,7 @@
 import React from "react";
-import contactUsImage from "../../assets/Group 402.svg";
+import contactUsImage from "../../assets/board1.svg";
 import insta from "../../assets/insta.svg";
-import linkedin from "../../assets/linkedin.svg";
+import linkedin from "../../assets/Group 411.png";
 import twitter from "../../assets/twitter.svg";
 import mail from "../../assets/Mail.svg";
 import discord from "../../assets/discord.svg";
@@ -12,7 +12,7 @@ function Contact() {
     <div className="contact-container">
       <img src={contactUsImage} alt="Contact Us" className="contact-image" />
       <a
-        href="Instagram - https://www.instagram.com/sus_hacks_viit?igsh=OHY1cTI0dzNtNjYz"
+        href="https://www.instagram.com/sus_hacks_viit?igsh=OHY1cTI0dzNtNjYz"
         target="_blank"
         rel="noopener noreferrer" id="insta"
       >

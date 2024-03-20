@@ -17,6 +17,12 @@ nav {
   padding: 27px;
   position: relative;
   cursor: pointer;
+  transition: color 0.3s; /* Add transition effect for color change */
+}
+
+/* Add hover styles for the links */
+.nav_link:hover {
+  color: #88c2bb; /* Change color on hover */
 }
 
 .nav-button {
@@ -117,5 +123,3 @@ nav {
     transform: skewX(7deg);
   }
 }
-
-

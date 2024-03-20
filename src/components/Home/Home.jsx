@@ -12,7 +12,7 @@ const Home = () => {
       <div className="start">
         <Start className="start-register" />
         <a href="#" className="register">
-          REGISTER NOW
+          REGISTER
         </a>
       </div>
     </div>

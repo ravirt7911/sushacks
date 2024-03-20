@@ -128,5 +128,36 @@
     transform: translate(-40%, -800%);
   }
 }
-@media (min-width: 361px) and (max-width: 799px) {
+@media (max-width: 740px) {
+  .crew img
+  {
+    height: 197px;
+    width:350px;
+  }
+  .planet img {
+    display: none;
+  }
+  .planetCroped {
+    display: block;
+    position: absolute;
+    top:50px;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+  }
+  .about-content p {
+    position: relative;
+    top:350px;
+    font-size: 40px;
+  }
+  #content {
+    position: relative;
+    top: 1020px;
+    left:20px;
+    font-size:x-small;
+    z-index: 1;
+    width: 300px;
+    text-align: center;
+  }
 }
