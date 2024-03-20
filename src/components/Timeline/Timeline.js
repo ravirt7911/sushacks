@@ -1,6 +1,7 @@
 import { Col, Container, Row } from "react-bootstrap";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+import "./Timeline.css";
 
 const Timeline = () => {
   const responsive = {
