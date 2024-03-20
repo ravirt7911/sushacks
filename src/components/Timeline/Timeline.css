@@ -22,14 +22,14 @@
   margin-bottom: 0px;
 }
 .timeline-slider .item img {
-  height: 200px;
-  width: 110px;
+  height: 300px;
+  width: 150px;
   margin-bottom: 0;
 }
 .phone-container {
   position: relative; /* Make the container position relative */
-  width: 800px; /* Adjust width as needed */
-  height: 400px; /* Adjust height as needed */
+  width: 1000px; /* Adjust width as needed */
+  height: 450px; /* Adjust height as needed */
   background-color: beige;
   border-radius: 20px;
   margin: 0 auto;
