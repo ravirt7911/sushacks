@@ -153,10 +153,11 @@
   }
   #content {
     position: relative;
-    top: 750px;
+    top: 1020px;
+    left:20px;
     font-size:x-small;
     z-index: 1;
-    width: 100%;
+    width: 300px;
     text-align: center;
   }
 }
