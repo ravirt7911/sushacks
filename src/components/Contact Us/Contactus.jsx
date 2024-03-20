@@ -1,7 +1,7 @@
 import React from "react";
-import contactUsImage from "../../assets/Board.svg";
+import contactUsImage from "../../assets/board1.svg";
 import insta from "../../assets/insta.svg";
-import linkedin from "../../assets/linkedin.svg";
+import linkedin from "../../assets/Group 411.png";
 import twitter from "../../assets/twitter.svg";
 import mail from "../../assets/Mail.svg";
 import discord from "../../assets/discord.svg";
