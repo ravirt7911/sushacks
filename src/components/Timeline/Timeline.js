@@ -67,15 +67,19 @@ const Timeline = () => {
 
   const progressBar = (
     <div className="progress-bar">
-      {timelineItems.map((timelineItems, index) => (
-        <div
-          key={index}
-          className={`progress-item ${index < currentSlide ? "filled" : ""}`}
-          style={{
-            width: `${(100 / timelineItems.length) * (index + 1)}%`,
-          }}
-        />
-      ))}
+      <div className="progress-text">
+        Total Tasks Completed
+        <div className="progress-partitions">
+          {timelineItems.map((item, index) => (
+            <div
+              key={index}
+              className={`progress-item ${
+                index <= currentSlide ? "filled" : ""
+              }`}
+            />
+          ))}
+        </div>
+      </div>
     </div>
   );
 
