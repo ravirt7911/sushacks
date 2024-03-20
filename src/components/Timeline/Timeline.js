@@ -1,12 +1,15 @@
+import { React, useState } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import "./Timeline.css";
+import img1 from "./assets/img_1.png";
+import img2 from "./assets/img_2.png";
 
 const Timeline = () => {
+  const [currentSlide, setCurrentSlide] = useState(0);
   const responsive = {
     superLargeDesktop: {
-      // the naming can be any, depends on you.
       breakpoint: { max: 4000, min: 3000 },
       items: 5,
     },
@@ -24,6 +27,58 @@ const Timeline = () => {
     },
   };
 
+  const timelineItems = [
+    {
+      title: "Resgistration Begins",
+      date: "20-03-24",
+      image: img1,
+    },
+    {
+      title: "Registration Ends",
+      date: "20-03-24",
+      image: img2,
+    },
+    {
+      title: "Hacking Starts",
+      date: "20-03-24",
+      image: img1,
+    },
+    {
+      title: "Hacking Ends",
+      date: "20-03-24",
+      image: img2,
+    },
+    {
+      title: "Hacking Ends",
+      date: "20-03-24",
+      image: img1,
+    },
+    {
+      title: "Hacking Ends",
+      date: "20-03-24",
+      image: img2,
+    },
+    {
+      title: "Hacking Ends",
+      date: "20-03-24",
+      image: img1,
+    },
+  ];
+
+  const progressBar = (
+    <div className="progress-bar">
+      {timelineItems.map((timelineItems, index) => (
+        <div
+          key={index}
+          className={`progress-item ${index < currentSlide ? "filled" : ""}`}
+          style={{
+            width: `${(100 / timelineItems.length) * (index + 1)}%`,
+          }}
+        />
+      ))}
+    </div>
+  );
+
   return (
     <div className="timeline">
       <Container>
@@ -31,41 +86,25 @@ const Timeline = () => {
           <Col>
             <div className="timeline-bx">
               <h2>TIMELINE</h2>
-              <Carousel
-                responsive={responsive}
-                infinite={true}
-                className="timeline-slider"
-              >
-                <div className="item">
-                  <h5 style={{color:"white"}}>Python</h5>
+              {progressBar}
+              <div className="phone-container">
+                <div className="phone-screen">
+                  <Carousel
+                    responsive={responsive}
+                    infinite={false}
+                    className="timeline-slider"
+                    afterChange={(nextSlide) => setCurrentSlide(nextSlide)}
+                  >
+                    {timelineItems.map((item, index) => (
+                      <div key={index} className="item">
+                        <img src={item.image} alt={item.title} />
+                        <h5>{item.title}</h5>
+                        <p>{item.date}</p>
+                      </div>
+                    ))}
+                  </Carousel>
                 </div>
-                <div className="item">
-                  
-                  <h5>HTML & CSS & JS</h5>
-                </div>
-                <div className="item">
-                  
-                  <h5>Competetive Programming</h5>
-                </div>
-                <div className="item">
-                  <h5>Problem Solving</h5>
-                </div>
-                <div className="item">
-                  <h5>Data Structures and Algorithms</h5>
-                </div>
-                <div className="item">
-                  <h5>ReactJS</h5>
-                </div>
-                <div className="item">
-                  <h5>Machine Learning</h5>
-                </div>
-                <div className="item">
-                  <h5>Data Science</h5>
-                </div>
-                <div className="item">
-                  <h5>Cloud Computing</h5>
-                </div>
-              </Carousel>
+              </div>
             </div>
           </Col>
         </Row>
@@ -73,4 +112,5 @@ const Timeline = () => {
     </div>
   );
 };
+
 export default Timeline;

@@ -1,23 +1,74 @@
-
 .timeline {
-  position: relative;
   font-family: "among us";
   color: white;
+  justify-content: center;
+  align-items: center;
 }
-.timeline .timeline-bx h2{
-  font-family: "among us";
-  color: white;
-}
-.timeline-slider .item h5{
-  color: white;
-}
-.timeline-container h1
-{
-  font-family: 'among Us';
-  color:aliceblue;
-  
-}
-.timeline-heading {
+
+.timeline-bx h2 {
   font-size: 100px;
   font-weight: normal;
+}
+
+.background-image {
+  height: 638px;
+  width: 89%;
+}
+
+.timeline-slider .item h5 {
+  font-size: 30px;
+  font-weight: normal;
+  margin-bottom: 0px;
+}
+.timeline-slider .item img {
+  height: 200px;
+  width: 110px;
+  margin-bottom: 0;
+}
+.phone-container {
+  position: relative; /* Make the container position relative */
+  width: 800px; /* Adjust width as needed */
+  height: 400px; /* Adjust height as needed */
+  background-color: beige;
+  border-radius: 20px;
+  margin: 0 auto;
+  overflow: hidden;
+  display: flex; /* Add display flex */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+}
+
+.phone-screen {
+  width: calc(100% - 70px);
+  height: calc(100% - 45px); /* Subtract padding from height */
+  overflow: hidden;
+  position: relative;
+  padding: 20px; /* Adjust padding as needed */
+  background-color: black; /* Set background color to black */
+  border-radius: 10px; /* Adjust border-radius as needed */
+}
+
+.timeline-bx {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.progress-bar {
+  width: 100px;
+  height: 30px;
+  margin-top: 10px;
+  display: flex;
+  margin-left: 300px;
+}
+
+.progress-item {
+  flex: 1;
+  height: 100%;
+  background-color: #ccc; /* Default color for unfilled parts */
+}
+
+.progress-item.filled {
+  background-color: green; /* Color for filled parts */
 }
