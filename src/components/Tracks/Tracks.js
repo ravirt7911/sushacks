@@ -5,27 +5,27 @@ import img1 from "../../assets/amongusred.png";
 
 const TracksData = [
   {
-    title: "Fintech (Financial Technology)",
+    title: "Fintech ",
     description:
       "Revolutionizing the finance industry through cutting-edge technology solutions, Fintech explores innovative ways to manage finances, streamline transactions, and enhance financial services for individuals and businesses alike.",
   },
   {
-    title: "Healthtech (Health Technology)",
+    title: "Healthtech ",
     description:
       "Healthtech leverages technology to transform healthcare delivery, from patient care and diagnostics to data management and telemedicine, ultimately improving accessibility, efficiency, and outcomes in the healthcare sector.",
   },
   {
-    title: "Edutech (Education Technology)",
+    title: "Edutech ",
     description:
       "Edutech revolutionizes education by integrating technology into learning processes, offering personalized learning experiences, interactive content, and remote learning solutions to enhance accessibility and effectiveness in education.",
   },
   {
-    title: "Agritech (Agriculture Technology)",
+    title: "Agritech ",
     description:
       "Agritech harnesses technology to optimize agricultural practices, from precision farming and crop monitoring to supply chain management, aiming to increase productivity, sustainability, and profitability in the agriculture industry.",
   },
   {
-    title: "Greentech (Green Technology)",
+    title: "Greentech ",
     description:
       "Greentech focuses on developing sustainable technology solutions to address environmental challenges, including renewable energy, waste management, and eco-friendly manufacturing, promoting a greener and more sustainable future.",
   },
@@ -35,12 +35,12 @@ const TracksData = [
   //     "Retailtech revolutionizes the retail industry by integrating technology into every aspect of the shopping experience, from online platforms and e-commerce solutions to personalized marketing and inventory management.",
   // },
   {
-    title: "Traveltech (Travel Technology)",
+    title: "Traveltech ",
     description:
       "Traveltech transforms the travel industry by leveraging technology to enhance booking experiences, streamline logistics, and provide personalized travel recommendations, ultimately improving convenience and efficiency for travelers.",
   },
   {
-    title: "Socialtech (Social Technology)",
+    title: "Socialtech ",
     description:
       "Socialtech explores innovative ways to leverage technology for social good, including social networking platforms, community-building tools, and digital activism, fostering connections and driving positive societal change.",
   },
