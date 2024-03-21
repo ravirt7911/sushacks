@@ -60,3 +60,13 @@
   .Footer-nav-links p {
     margin: 10px; }
   
+
+    @media (max-width: 410px){
+        .start{
+            display: none;
+        }
+        .Footer-Description, .Footer-all-Links{
+            display: none;
+        }
+    }
+    

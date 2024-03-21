@@ -8,7 +8,7 @@ import About from "./components/About/About.jsx";
 import Sponsors from "./components/Sponsors/Sponsors.jsx";
 import Contact from "./components/Contact Us/Contactus.jsx";
 import Faqs from "./components/FAQs/Faqs.js";
-import Footer from "./components/Footer/Footer.js"
+import Footer from "./components/Footer/Footer.js";
 import Timeline from "./components/Timeline/Timeline.js";
 
 function App() {
@@ -18,12 +18,12 @@ function App() {
       <Home />
       <About />
       <Tracks />
-      {/* <Timeline /> */}
-      {/* <Prizes /> */}
+      <Timeline />
+      <Prizes />
       <Sponsors />
       <Faqs />
       <Contact />
-      <Footer/>
+      <Footer />
     </div>
   );
 }
