@@ -55,9 +55,9 @@ const TracksData = [
       "Cybersecurity focuses on protecting digital systems, networks, and data from cyber threats and attacks, employing advanced technologies and strategies to safeguard sensitive information and ensure the integrity and confidentiality of digital assets.",
   },
   {
-    title: "Web 3",
+    title: "Decentralized Web",
     description:
-      "Web 3 represents the next evolution of the internet, characterized by decentralized architectures, blockchain technology, and peer-to-peer interactions, offering enhanced privacy, security, and user control in online ecosystems.",
+      "Also know as Web 3.0, represents the next evolution of the internet, characterized by decentralized architectures, blockchain technology, and peer-to-peer interactions, offering enhanced privacy, security, and user control in online ecosystems.",
   },
   {
     title: "Miscellaneous",
