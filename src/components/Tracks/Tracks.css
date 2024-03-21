@@ -1,5 +1,5 @@
 .TracksHome {
-  height: 60vh;
+  height: 80vh;
   background-color: #1a282f;
   display: flex;
   align-items: center;
@@ -37,7 +37,7 @@
   letter-spacing: 1px;
 }
 .TracksContainer {
-  height: 50vh;
+  height: 60vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -62,8 +62,8 @@
   background-color: black;
   border: 7px solid #00ffe0;
   border-radius: 5px;
-  margin: 20px;
-  height: 280px;
+  margin-top: 0px;
+  height: 300px;
   padding-left: 40px;
   padding-right: 40px;
 }
@@ -84,7 +84,7 @@
   padding: 20px;
   border: 5px solid #00ffe0;
   border-radius: 5px;
-  margin: 10px;
+  margin-top: 0px;
 }
 .TracksButton {
   margin-top: 5px;

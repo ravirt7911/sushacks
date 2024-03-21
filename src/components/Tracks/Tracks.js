@@ -5,29 +5,64 @@ import img1 from "../../assets/amongusred.png";
 
 const TracksData = [
   {
-    title: "AI/ML",
+    title: "Fintech (Financial Technology)",
     description:
-      "1 .The simplest way to understand how AI and ML relate to each other is: AI is the broader concept of enabling a machine or system to sense, reason, act, or adapt like a human. ML is an application of AI that allows machines to extract knowledge from data and learn from it autonomously.",
+      "Revolutionizing the finance industry through cutting-edge technology solutions, Fintech explores innovative ways to manage finances, streamline transactions, and enhance financial services for individuals and businesses alike.",
   },
   {
-    title: "WEB 3.0",
+    title: "Healthtech (Health Technology)",
     description:
-      "2 .The simplest way to understand how AI and ML relate to each other is: AI is the broader concept of enabling a machine or system to sense, reason, act, or adapt like a human. ML is an application of AI that allows machines to extract knowledge from data and learn from it autonomously.",
+      "Healthtech leverages technology to transform healthcare delivery, from patient care and diagnostics to data management and telemedicine, ultimately improving accessibility, efficiency, and outcomes in the healthcare sector.",
   },
   {
-    title: "CYBERSECURITY",
+    title: "Edutech (Education Technology)",
     description:
-      "3 .The simplest way to understand how AI and ML relate to each other is: AI is the broader concept of enabling a machine or system to sense, reason, act, or adapt like a human. ML is an application of AI that allows machines to extract knowledge from data and learn from it autonomously.",
+      "Edutech revolutionizes education by integrating technology into learning processes, offering personalized learning experiences, interactive content, and remote learning solutions to enhance accessibility and effectiveness in education.",
   },
   {
-    title: "APP DEVELOPMENT",
+    title: "Agritech (Agriculture Technology)",
     description:
-      "4 .The simplest way to understand how AI and ML relate to each other is: AI is the broader concept of enabling a machine or system to sense, reason, act, or adapt like a human. ML is an application of AI that allows machines to extract knowledge from data and learn from it autonomously.",
+      "Agritech harnesses technology to optimize agricultural practices, from precision farming and crop monitoring to supply chain management, aiming to increase productivity, sustainability, and profitability in the agriculture industry.",
   },
   {
-    title: "CLOUD",
+    title: "Greentech (Green Technology)",
     description:
-      "5 .The simplest way to understand how AI and ML relate to each other is: AI is the broader concept of enabling a machine or system to sense, reason, act, or adapt like a human. ML is an application of AI that allows machines to extract knowledge from data and learn from it autonomously.",
+      "Greentech focuses on developing sustainable technology solutions to address environmental challenges, including renewable energy, waste management, and eco-friendly manufacturing, promoting a greener and more sustainable future.",
+  },
+  // {
+  //   title: "Retailtech (Retail Technology)",
+  //   description:
+  //     "Retailtech revolutionizes the retail industry by integrating technology into every aspect of the shopping experience, from online platforms and e-commerce solutions to personalized marketing and inventory management.",
+  // },
+  {
+    title: "Traveltech (Travel Technology)",
+    description:
+      "Traveltech transforms the travel industry by leveraging technology to enhance booking experiences, streamline logistics, and provide personalized travel recommendations, ultimately improving convenience and efficiency for travelers.",
+  },
+  {
+    title: "Socialtech (Social Technology)",
+    description:
+      "Socialtech explores innovative ways to leverage technology for social good, including social networking platforms, community-building tools, and digital activism, fostering connections and driving positive societal change.",
+  },
+  // {
+  //   title: "Logistics and Supply Chain",
+  //   description:
+  //     "Logistics and Supply Chain utilizes technology to optimize the movement of goods and materials, from inventory management and transportation logistics to supply chain visibility and real-time tracking, enhancing efficiency and reducing costs in global supply chains.",
+  // },
+  {
+    title: "Cybersecurity",
+    description:
+      "Cybersecurity focuses on protecting digital systems, networks, and data from cyber threats and attacks, employing advanced technologies and strategies to safeguard sensitive information and ensure the integrity and confidentiality of digital assets.",
+  },
+  {
+    title: "Web 3",
+    description:
+      "Web 3 represents the next evolution of the internet, characterized by decentralized architectures, blockchain technology, and peer-to-peer interactions, offering enhanced privacy, security, and user control in online ecosystems.",
+  },
+  {
+    title: "Miscellaneous",
+    description:
+      "Miscellaneous encompasses a diverse range of technology tracks, including emerging technologies, interdisciplinary fields, and niche areas not covered by other categories, offering opportunities for exploration and innovation across various domains.",
   },
 ];
 
