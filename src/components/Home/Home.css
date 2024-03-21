@@ -1,9 +1,8 @@
 .home-container {
-  /* margin: 25px 100px; */
-  /* margin-left: 500px; */
-  justify-content: space-between;
-  align-items: last baseline;
-  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .susHacks {
@@ -18,7 +17,6 @@
 
 .start {
   position: relative;
-  padding: 40px;
 }
 
 .register {
@@ -38,26 +36,24 @@
   transition: color 0.3s;
 }
 .register:hover {
-  color: lightblue; /* Change color on hover */
+  color: lightblue; 
 }
 @media (max-width: 1024px) {
   .home-container {
-    /* margin-left: 20px; */
-    margin-top: -107px;
+    margin-top: 35px;
     display: flex;
     justify-content: space-between;
-    align-items: last baseline;
+    align-items: center;
   }
   .susHacks {
     width: 220px;
     height: 240px;
   }
   .start {
-    bottom: -70px;
     margin-bottom: 60px;
   }
   .start .start-register {
-    width: 150px;
+    width: 250px;
     height: 80px;
   }
   .register {
@@ -71,26 +67,19 @@
   .home-container {
     display: flex;
     justify-content: space-between;
-    align-items: last baseline;
-    margin-left: 20%;
+    align-items: center;
     margin-top: 35px;
     gap: 20px;
   }
-  .susHacks{
-    height:200px;
-    width:200px;
+  .susHacks {
+    height: 200px;
+    width: 200px;
   }
-  .register{
-    font-size: 50px;
-    padding: 10px 20px;
-    top: 110px;
-    left: -100px;
+  .register {
+    padding: 0px 20px;
   }
-  .start .start-register{
+  .start .start-register {
     position: relative;
-    height: 100px;
-    width:100px;
-    top: 20px;
-    left: -190px;
+    top: 0px;
   }
 }

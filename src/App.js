@@ -18,8 +18,8 @@ function App() {
       <Home />
       <About />
       <Tracks />
-      <Timeline />
-      <Prizes />
+      {/* <Timeline /> */}
+      {/* <Prizes /> */}
       <Sponsors />
       <Faqs />
       <Contact />

@@ -16,8 +16,7 @@
 
 #insta {
   position: absolute;
-  top: 65%;
-  top: 20%;
+  top: 60%;
   right: 50%;
   transform: translate(50%, -50%);
 }
@@ -26,9 +25,6 @@
   position: absolute;
   top: 73%;
   right: 25%;
-
-  top: 30%;
-  right: 27%;
   transform: translate(50%, -50%);
 }
 
@@ -36,21 +32,41 @@
   position: absolute;
   top: 76%;
   left: 13%;
-  top: 30%;
-  left: 15%;
   transform: translate(50%, -50%);
 }
 #twitter {
   position: absolute;
   top: 118%;
-  top: 60%;
   left: 19%;
   transform: translate(50%, -50%);
 }
 #discord {
   position: absolute;
   top: 118%;
-  top: 60%;
   right: 30%;
   transform: translate(50%, -50%);
+}
+
+
+@media (max-width: 1024px) {
+  .contact-image{
+    width: 700px;
+  }
+}
+
+@media (max-width: 740px) {
+  .contact-image{
+    width: 500px;
+  }
+}
+
+@media (max-width: 470px) {
+  .contact-image{
+    width: 350px;
+  }
+}
+@media (max-width: 370px) {
+  .contact-image{
+    width: 300px;
+  }
 }
