@@ -61,6 +61,9 @@ nav {
     justify-content: center;
     align-items: center;
     opacity: 1;
+    height: 50px;
+    width: 120px;
+    margin-right: -20px;
   }
 
   .nav-close {
