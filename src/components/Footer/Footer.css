@@ -59,4 +59,11 @@
   
   .Footer-nav-links p {
     margin: 10px; }
-  
+.text-email{
+    font-family: var(--font);
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+.Footer-address{
+    padding-top: 20px;
+}
