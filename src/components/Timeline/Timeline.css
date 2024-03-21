@@ -1,23 +1,142 @@
-
 .timeline {
-  position: relative;
   font-family: "among us";
   color: white;
+  justify-content: center;
+  align-items: center;
 }
-.timeline .timeline-bx h2{
-  font-family: "among us";
-  color: white;
-}
-.timeline-slider .item h5{
-  color: white;
-}
-.timeline-container h1
-{
-  font-family: 'among Us';
-  color:aliceblue;
-  
-}
-.timeline-heading {
+
+.timeline-bx h2 {
   font-size: 100px;
   font-weight: normal;
+  margin-bottom: 10px;
+}
+
+.background-image {
+  height: 638px;
+  width: 89%;
+}
+
+.timeline-slider .item h5 {
+  font-size: 30px;
+  font-weight: normal;
+  margin-bottom: 0px;
+}
+.timeline-slider .item img {
+  height: 300px;
+  width: 150px;
+  margin-bottom: 0;
+}
+.phone-container {
+  position: relative; /* Make the container position relative */
+  width: 1000px; /* Adjust width as needed */
+  height: 450px; /* Adjust height as needed */
+  background-color: beige;
+  border-radius: 20px;
+  margin: 0 auto;
+  overflow: hidden;
+  display: flex; /* Add display flex */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+}
+
+.phone-screen {
+  width: calc(100% - 70px);
+  height: calc(100% - 45px); /* Subtract padding from height */
+  overflow: hidden;
+  position: relative;
+  padding: 20px; /* Adjust padding as needed */
+  background-color: black; /* Set background color to black */
+  border-radius: 10px; /* Adjust border-radius as needed */
+}
+
+.timeline-bx {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.progress-bar {
+  width: 300px;
+  height: 50px; /* Adjust height as needed */
+  margin-left: 230px;
+  display: flex;
+  margin-top: 0px;
+  flex-direction: column;
+  margin-bottom: 10px; /* Align text vertically */
+}
+
+.progress-text {
+  color: white;
+  background-color: #333; /* Dark background color */
+  border: 2px solid white; /* White border */
+  padding: 10px; /* Adjust padding as needed */
+  font-size: 25px; /* Adjust font size as needed */
+}
+
+.progress-partitions {
+  display: flex;
+  align-items: center;
+}
+
+.progress-item {
+  flex-grow: 1;
+  height: 10px; /* Height of partitions */
+  margin: 0 2px; /* Adjust margin between partitions */
+}
+
+.progress-item.filled {
+  background-color: green; /* Color for filled partitions */
+}
+
+@media screen and (max-width: 768px) {
+  .timeline-bx h2 {
+    font-size: 60px;
+  }
+  .phone-container {
+    width: 250px;
+    height: 350px;
+  }
+
+  .progress-bar {
+    width: 70px;
+  }
+
+  .timeline-slider .item h5 {
+    font-size: 20px;
+  }
+
+  .timeline-slider .item img {
+    height: 150px;
+    width: 90px;
+  }
+
+  .progress-bar {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .timeline-bx h2 {
+    font-size: 40px;
+  }
+
+  .timeline-slider .item h5 {
+    font-size: 18px;
+  }
+
+  .timeline-slider .item img {
+    height: 120px;
+    width: 70px;
+  }
+
+  .progress-text {
+    font-size: 18px;
+  }
+
+  .progress-item {
+    height: 8px;
+    margin: 0 1px;
+  }
 }
