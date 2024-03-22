@@ -25,8 +25,8 @@ function Footer() {
           {/* Add social media profiles or links here */}
         </div>
         <div className="Footer-address">
-          <p>sushacks.viit@gmail.com</p>
-          <p>VIIT-Duvvada,Visakhapatnam</p>
+          <p className="text-email">sushacks.viit@gmail.com</p>
+          <p className="text-email">VIIT-Duvvada,Visakhapatnam</p>
         </div>
       </div>
       <div className="Footer-Clubs">
