@@ -123,6 +123,6 @@ nav {
   }
   .open {
     transition: 1s;
-    transform: skewX(7deg);
+    transform: skewX(5deg);
   }
 }

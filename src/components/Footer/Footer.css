@@ -1,70 +1,77 @@
 .Footer-container {
-    font-family: 'among us';
-    font-size: 1.3rem;
-    letter-spacing: 2px;
-    margin-top: 50px;
-    padding: 50px;
-    background-color: black;
-    color: aliceblue;
-    height: auto; 
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    flex: 1; 
-    align-items: center;
-    justify-content: center;
+  font-family: "among us";
+  font-size: 1.3rem;
+  letter-spacing: 2px;
+  padding: 50px;
+  background-color: black;
+  color: aliceblue;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
 }
 
 .Footer-Description {
-    flex: 1;
+  flex: 1;
 }
-.Footer-Logo img{
-    height:200px;
-    width:200px;
+.Footer-Logo img {
+  height: 200px;
+  width: 200px;
 }
 .Footer-Description p {
-    text-align: start;
-    margin-left: 50px;
+  text-align: start;
+  margin-left: 50px;
 }
 .Footer-Logo {
-    flex: 1; 
+  flex: 1;
 }
 
 .Footer-Clubs {
-    flex: 1;
+  flex: 1;
 }
-.Footer-Description img{
-    position: relative;
-    left: -100px;
+.Footer-Description img {
+  position: relative;
+  left: -100px;
 }
-.Footer-all-Links
-{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 2.1rem;
+.Footer-all-Links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.1rem;
 }
-.Footer-Community-partners h5
-{
+.Footer-Community-partners h5 {
   font-size: 1.5rem;
 }
 .Footer-nav-links {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center; 
-    justify-content: flex-start;
-    height: 200px;
-  }
-  
-  .Footer-nav-links p {
-    margin: 10px; }
-  
-.text-email{
-    font-family: var(--font);
-    font-size: 14px;
-    letter-spacing: 1px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 200px;
 }
-.Footer-address{
-    padding-top: 10px;
+
+.Footer-nav-links p {
+  margin: 10px;
+}
+
+.text-email {
+  font-family: var(--font);
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+.Footer-address {
+  padding-top: 10px;
+}
+
+@media (max-width: 520px) {
+  .Footer-Description {
+    display: none;
+  }
+  .Footer-all-Links {
+    display: none;
+  }
 }
