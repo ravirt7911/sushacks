@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import contactUsImage from "../../assets/board1.svg";
+import contactUsMobileImage from "../../assets/Rectangle.png"; 
 import insta from "../../assets/insta.svg";
 import linkedin from "../../assets/Group 411.png";
 import twitter from "../../assets/twitter.svg";
@@ -8,9 +9,31 @@ import discord from "../../assets/discord.svg";
 import "./Contactus.css";
 
 function Contact() {
+    const [width, setWidth] = useState(window.innerWidth);
+    const [contactImage, setContactImage] = useState(width <= 740 ? contactUsImage : contactUsMobileImage);
+
+    useEffect(() => {
+      const handleResize = () => {
+        setWidth(window.innerWidth);
+      };
+  
+      window.addEventListener('resize', handleResize);
+      
+      return () => {
+        window.removeEventListener('resize', handleResize);
+      };
+    }, []);
+
+    useEffect(() => {
+      if(width <= 740)
+      setContactImage(contactUsMobileImage);  
+      else
+      setContactImage(contactUsImage);
+    }, [width]);
+
   return (
-    <div className="contact-container">
-      <img src={contactUsImage} alt="Contact Us" className="contact-image" />
+    <div className="contact-container" >
+      <img src={contactImage} alt="Contact Us" className="contact-image" />
       <a
         href="https://www.instagram.com/sus_hacks_viit?igsh=OHY1cTI0dzNtNjYz"
         target="_blank"

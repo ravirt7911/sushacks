@@ -84,3 +84,24 @@
     bottom: 82%;
   }
 }
+@media (max-width:740px)
+{
+  .sponsors .heading
+  {
+    font-size: 52px;
+  }
+  .sponsors #angel
+  {
+    height: 110px;
+    position:absolute;
+    top: 50px;
+    margin-left: 20px;
+  }
+  .sponsors-divs p{
+    font-size: 1rem;
+  }
+  .sponsors-imgs
+  {
+    height: 200px;
+  }
+}
