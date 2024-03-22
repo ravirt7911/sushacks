@@ -11,3 +11,29 @@
 .prizes {
   display: flex;
 }
+@media (max-width:740px)
+{
+  .page{
+    margin-left: -10px;
+  }
+  .prizes img{
+    height:50px;
+    width: 50px;
+    margin-top:40px;
+  }
+  .prizes p{
+   font-size: 50px;
+  }
+  .combined
+  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 40px;
+    margin-top: -30px;
+  }
+  .combined .prize{
+    height: 200px;
+    width:300px;
+  }
+}

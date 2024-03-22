@@ -45,3 +45,16 @@
   right: 30%;
   transform: translate(50%, -50%);
 }
+@media (max-width:740px)
+{
+  #insta{display: none;}
+  #discord{display: none;}
+  #twitter{display: none;}
+  #mail{display: none;}
+  #linkedin{display: none;}
+  .contact-container .contact-image
+  {
+    height:250px;
+    width:250px;
+  } 
+}
