@@ -37,7 +37,7 @@
 .sponsors-imgs {
   display: flex;
   justify-content: center;
-  width: 300px;
+  width: 200px;
   margin-top: 5px;
 }
 .sponsors-divs .sponsors-imgs a img {
@@ -52,6 +52,37 @@
   bottom: 78%;
   left: 52%;
   height: 250px;
+}
+
+@media (max-width: 740px) {
+  .sponsors-imgs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .sponsors-divs .sponsors-imgs a img {
+    width: 220px;
+  }
+ 
+}
+
+@media (max-width: 470px) {
+  .sponsors-imgs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .sponsors-divs .sponsors-imgs a img {
+    width: 120px;
+    height: 70px;
+  }
+  .sponsors .heading {
+    font-size: 70px;
+  }
+  .sponsors #angel {
+    height: 200px;
+    bottom: 82%;
+  }
 }
 @media (max-width:740px)
 {

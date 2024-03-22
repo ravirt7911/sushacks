@@ -37,8 +37,7 @@ function Contact() {
       <a
         href="https://www.instagram.com/sus_hacks_viit?igsh=OHY1cTI0dzNtNjYz"
         target="_blank"
-        rel="noopener noreferrer"
-        id="insta"
+        rel="noopener noreferrer" id="insta"
       >
         <img src={insta} alt="insta" />
       </a>

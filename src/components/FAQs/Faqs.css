@@ -110,3 +110,49 @@
   padding-top: 9px;
   text-align: left;
 }
+
+@media (max-width: 1024px) {
+  .faqs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .accordion-container {
+    width: 500px;
+  }
+}
+
+@media (max-width: 580px) {
+  .faqs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .accordion-container {
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .question ,.answer{
+    font-size: 23px;
+  }
+}
+
+@media (max-width: 410px) {
+  .faqs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .accordion-container {
+    width: 340px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .question {
+    font-size: 19px;
+  }
+  .answer{
+    font-size: 19px;
+  }
+}
