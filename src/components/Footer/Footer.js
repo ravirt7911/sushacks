@@ -9,7 +9,7 @@ function Footer() {
     <div className="Footer-container">
       <div className="Footer-Description">
         <img src={img1} alt="image" />
-        <p>Unleash your creativity and be part of Rebase, a month-long online hackathon extravaganza! Compete across various categories,showcasing your skills, creativity, and teamwork alongside peers who shareyour passion. This is your chance to challenge yourself, learn new skills, and create</p>
+        <p>Dive deeper into the Sus-Hacks experience! Register now to join the community and secure your spot at the hackathon. Let's make a difference together!</p>
         <div className="start">
           <Start className="start-register" />
           <a href="#" className="register">
