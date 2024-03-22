@@ -5,81 +5,124 @@
   align-items: center;
   height: 100vh;
   flex-direction: column;
-  margin-top: 0;
+  margin-top: 60px;
 }
 
 .contact-image {
   height: 400px;
   position: relative;
-  bottom:0%;
+  bottom: 0%;
 }
 
 #insta {
   position: absolute;
-  top: 60%;
-  right: 50%;
+  bottom: 60%;
+  right: 48%;
   transform: translate(50%, -50%);
 }
 
 #linkedin {
   position: absolute;
-  top: 73%;
-  right: 25%;
+  top: 70%;
+  right: 30%;
   transform: translate(50%, -50%);
 }
 
 #mail {
   position: absolute;
-  top: 76%;
-  left: 13%;
+  top: 70%;
+  left: 19%;
   transform: translate(50%, -50%);
 }
 #twitter {
   position: absolute;
-  top: 118%;
+  bottom: 53%;
   left: 19%;
   transform: translate(50%, -50%);
 }
 #discord {
   position: absolute;
-  top: 118%;
-  right: 30%;
+  bottom: 53%;
+  right: 27%;
   transform: translate(50%, -50%);
 }
-
+.responsive-links {
+  display: none;
+  width: 300px;
+}
+.responsive-links img {
+  margin: 0% 3%;
+}
 
 @media (max-width: 1024px) {
-  .contact-image{
+  .contact-image {
     width: 700px;
+  }
+  #insta {
+    position: absolute;
+    bottom: 58%;
+    right: 48%;
+    transform: translate(50%, -50%);
+  }
+
+  #linkedin {
+    position: absolute;
+    top: 60%;
+    right: 20%;
+    transform: translate(50%, -50%);
+  }
+
+  #mail {
+    position: absolute;
+    top: 60%;
+    left: 0%;
+    transform: translate(50%, -50%);
+  }
+  #twitter {
+    position: absolute;
+    bottom: 53%;
+    left: 7%;
+    transform: translate(50%, -50%);
+  }
+  #discord {
+    position: absolute;
+    bottom: 53%;
+    right: 17%;
+    transform: translate(50%, -50%);
   }
 }
 
 @media (max-width: 740px) {
-  .contact-image{
-    width: 500px;
+  #insta {
+    display: none;
+  }
+  #discord {
+    display: none;
+  }
+  #twitter {
+    display: none;
+  }
+  #mail {
+    display: none;
+  }
+  #linkedin {
+    display: none;
+  }
+  .contact-container{
+    margin: 0%;
+  }
+  .contact-container .contact-image {
+    height: 350px;
+    width: 350px;
+  }
+  .responsive-links {
+    display: block;
   }
 }
 
 @media (max-width: 470px) {
-  .contact-image{
-    width: 350px;
+  .contact-container .contact-image {
+    height: 250px;
+    width: 250px;
   }
-}
-@media (max-width: 370px) {
-  .contact-image{
-    width: 300px;
-  }
-}
-@media (max-width:740px)
-{
-  #insta{display: none;}
-  #discord{display: none;}
-  #twitter{display: none;}
-  #mail{display: none;}
-  #linkedin{display: none;}
-  .contact-container .contact-image
-  {
-    height:250px;
-    width:250px;
-  } 
 }
