@@ -26,7 +26,7 @@ function Footer() {
         </div>
         <div className="Footer-address">
           <p className="text-email">sushacks.viit@gmail.com</p>
-          <p className="text-email">VIIT-Duvvada,Visakhapatnam</p>
+          <p className="text-email">Vignan's Institute Of Information Technology,Duvvada</p>
         </div>
       </div>
       <div className="Footer-Clubs">
