@@ -19,11 +19,11 @@ function App() {
       <About />
       <Tracks />
      <Timeline /> 
-     {/* <Prizes />
+     <Prizes />
      <Sponsors /> 
       <Faqs />
       <Contact />
-      <Footer />*/}
+      <Footer />
     </div>
   );
 }
