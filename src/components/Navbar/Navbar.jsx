@@ -12,6 +12,7 @@ function Navbar() {
   };
   return (
     <div className="navbar-container">
+      <div className="GlowEffect"></div>
       <nav ref={ref}>
         <button className="nav-button nav-close" onClick={openNav}>
           <Close />

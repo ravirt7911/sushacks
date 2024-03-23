@@ -1,3 +1,4 @@
+
 nav {
   height: 100px;
   width: 100%;
@@ -8,12 +9,22 @@ nav {
   margin-bottom: 50px;
   font-family: "Among Us";
 }
-
+.GlowEffect
+{
+  position: absolute;
+  top: 40px;
+  width: 70vw;
+  height: 20px;
+  left:15%;
+  background-color: white;
+  filter: blur(37px);
+}
 .nav_link {
   text-decoration: none;
   font-size: 48px;
   font-weight: 550;
   color: white;
+  text-shadow: 0px 0px 4px whitesmoke;
   padding: 27px;
   position: relative;
   cursor: pointer;
