@@ -55,7 +55,7 @@ function Footer() {
         <div className="Footer-Community-partners">
           <h5>Community partner</h5>
           <div>
-            <img src={img2} alt="" />
+            <img src={img2} height={80} width={250} alt="" />
           </div>
         </div>
       </div>
