@@ -5,7 +5,7 @@ import Pic from "../../assets/among 1 (1).svg";
 
 const Faqs = () => {
   return (
-    <div className="faqs">
+    <div id="faq" className="faqs">
       <div className="content">
         <img src={Pic} alt="Among Us" className="image" />
         <h1>FAQS</h1>

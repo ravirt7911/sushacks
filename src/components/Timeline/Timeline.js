@@ -69,7 +69,7 @@ const Timeline = () => {
   ];
 
   const progressBar = (
-    <div className="progress-bar">
+    <div id="timeline"className=" progress-bar">
       <div className="progress-text">
         Total Tasks Completed
         <div className="progress-partitions">
