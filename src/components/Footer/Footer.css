@@ -68,6 +68,10 @@
 }
 
 @media (max-width: 520px) {
+  .Footer-container
+  {
+    margin-top: -230px;
+  }
   .Footer-Description {
     display: none;
   }
