@@ -116,6 +116,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    letter-spacing:0.7px;
   }
   .accordion-container {
     width: 500px;
