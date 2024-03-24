@@ -4,6 +4,14 @@ import img1 from '../../assets/Group 339 1.png'
 import { ReactComponent as Start } from "../../assets/Start.svg";
 import SusHacks from "../../assets/susHacks.png";
 import img2 from '../../assets/Group 416.png'
+import Home from "../Home/Home";
+import About from "../About/About";
+import Tracks from "../Tracks/Tracks";
+import Timeline from "../Timeline/Timeline";
+import Prizes from "../Prizes/Prizes";
+import Sponsors from "../Sponsors/Sponsors";
+import Faqs from "../FAQs/Faqs";
+import Contact from "../Contact Us/Contactus";
 function Footer() {
   return (
     <div className="Footer-container">
@@ -26,28 +34,28 @@ function Footer() {
         </div>
         <div className="Footer-address">
           <p className="text-email">sushacks.viit@gmail.com</p>
-          <p className="text-email">VIIT-Duvvada,Visakhapatnam</p>
+          <p className="text-email">Vignan's Institute Of Information Technology,Duvvada</p>
         </div>
       </div>
       <div className="Footer-Clubs">
         <div className="Footer-all-Links">
         <div className="Footer-nav-links">
-          <p>HOME</p>
-          <p>ABOUT</p>
-          <p>TRACKS</p>
-          <p>TIMELINE</p>
+          <p> <a href="#home">HOME</a></p>
+          <p> <a href="#about">ABOUT</a></p>
+          <p><a href="#tracks">TRACKS</a></p>
+          <p><a href="#timeline">TIMELINE</a></p>
         </div>
         <div className="Footer-nav-links">
-          <p>PRIZES</p>
-          <p>SPONSORS</p>
-          <p>FAQ</p>
-          <p>CONTACTUS</p>
+          <p><a href="#prizes">PRIZES</a></p>
+          <p><a href="#sponsors">SPONSORS</a></p>
+          <p><a href="#faq">FAQ</a></p>
+          <p><a href="#contactus">CONTACTUS</a></p>
         </div>
         </div>
         <div className="Footer-Community-partners">
           <h5>Community partner</h5>
           <div>
-            <img src={img2} alt="" />
+            <img src={img2} height={80} width={250} alt="" />
           </div>
         </div>
       </div>

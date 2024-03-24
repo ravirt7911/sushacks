@@ -14,13 +14,13 @@ import Timeline from "./components/Timeline/Timeline.js";
 function App() {
   return (
     <div className="App">
-      <Navbar />
+     <Navbar />
       <Home />
       <About />
       <Tracks />
-     {/* <Timeline /> */}
-      <Prizes />
-      <Sponsors />
+     <Timeline /> 
+     <Prizes />
+     <Sponsors /> 
       <Faqs />
       <Contact />
       <Footer />

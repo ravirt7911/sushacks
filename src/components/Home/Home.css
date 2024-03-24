@@ -36,7 +36,18 @@
   transition: color 0.3s;
 }
 .register:hover {
-  color: lightblue; 
+  color: lightblue;
+}
+
+.rocket {
+  position: absolute;
+  top: 10%;
+  left: 5%;
+}
+.floating-amongus{
+  position: absolute;
+  top:0%;
+  right:3%;
 }
 @media (max-width: 1024px) {
   .home-container {

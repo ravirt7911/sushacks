@@ -85,6 +85,8 @@
   border: 5px solid #00ffe0;
   border-radius: 5px;
   margin: 10px;
+  max-height: 200px;
+  overflow: hidden;
 }
 .TracksButton {
   margin-top: 5px;
@@ -97,6 +99,10 @@
   letter-spacing: 1px;
   border-radius: 5px;
 }
+.TracksButton:nth-child(6){
+  margin-top: 70px;
+}
+
 .TracksButton.active {
   margin-top: 5px;
   padding: 7px;

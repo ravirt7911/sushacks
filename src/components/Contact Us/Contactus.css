@@ -108,8 +108,8 @@
   #linkedin {
     display: none;
   }
-  .contact-container{
-    margin: 0%;
+  .contact-container {
+    margin-top: -190px;
   }
   .contact-container .contact-image {
     height: 350px;

@@ -30,7 +30,6 @@
   position: relative; /* Make the container position relative */
   width: 1000px; /* Adjust width as needed */
   height: 450px; /* Adjust height as needed */
-  background-color: beige;
   border-radius: 20px;
   margin: 0 auto;
   overflow: hidden;
@@ -38,17 +37,19 @@
   justify-content: center; /* Center horizontally */
   align-items: center; /* Center vertically */
 }
-
-.phone-screen {
-  width: calc(100% - 70px);
-  height: calc(100% - 45px); /* Subtract padding from height */
-  overflow: hidden;
-  position: relative;
-  padding: 20px; /* Adjust padding as needed */
-  background-color: black; /* Set background color to black */
-  border-radius: 10px; /* Adjust border-radius as needed */
+.phone-container img{
+  height: 450px;
+  width: 1050px;
+  border-radius: 20px;
 }
-
+.phone-screen
+{
+  position: absolute;
+  left:70px;
+  z-index: 100;
+  height:450px;
+  width:900px;
+}
 .timeline-bx {
   height: 100%;
   display: flex;
@@ -112,14 +113,20 @@
   }
 
   .progress-bar {
-    width: 100%;
+    width: 200px;
     margin-left: 0;
   }
 }
 
 @media screen and (max-width: 480px) {
+  .progress-bar
+  {
+    margin-left: 47px;
+    margin-top: 20px;
+  }
   .timeline-bx h2 {
     font-size: 40px;
+    margin-left: -60px;
   }
 
   .timeline-slider .item h5 {
@@ -138,5 +145,29 @@
   .progress-item {
     height: 8px;
     margin: 0 1px;
+  }
+  .phone-container
+  {
+    margin-left: 50px;
+  }
+  .phone-container img{
+    
+    height: 200px;
+    width: 300px;
+    border-radius: 5px;
+    transform: rotate(270deg);
+    margin-left: -50px;
+  }
+  .item img{
+    transform: rotate(0deg);
+    margin-left: 10px;
+  }
+  .phone-screen
+  {
+    position: absolute;
+    left: 0px;
+    z-index: 100;
+    height:250px;
+    width:200px;
   }
 }

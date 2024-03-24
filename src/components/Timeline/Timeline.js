@@ -1,13 +1,16 @@
-import { React, useState } from "react";
+import { React, useEffect, useState } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import "./Timeline.css";
 import img1 from "./assets/img_1.png";
 import img2 from "./assets/img_2.png";
-
+import PhoneImg from "./assets/phn.jpg"
 const Timeline = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
+  useEffect(()=>{
+  console.log(currentSlide);
+  },[currentSlide])
   const responsive = {
     superLargeDesktop: {
       breakpoint: { max: 4000, min: 3000 },
@@ -66,7 +69,7 @@ const Timeline = () => {
   ];
 
   const progressBar = (
-    <div className="progress-bar">
+    <div id="timeline"className=" progress-bar">
       <div className="progress-text">
         Total Tasks Completed
         <div className="progress-partitions">
@@ -92,12 +95,13 @@ const Timeline = () => {
               <h2>TIMELINE</h2>
               {progressBar}
               <div className="phone-container">
+                <img src={PhoneImg} alt="" />
                 <div className="phone-screen">
                   <Carousel
                     responsive={responsive}
                     infinite={false}
                     className="timeline-slider"
-                    afterChange={(nextSlide) => setCurrentSlide(nextSlide)}
+                    beforeChange={(nextSlide) => setCurrentSlide(nextSlide)}
                   >
                     {timelineItems.map((item, index) => (
                       <div key={index} className="item">
