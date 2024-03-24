@@ -39,15 +39,26 @@
   color: lightblue;
 }
 
-.rocket {
+.teeth {
   position: absolute;
-  top: 10%;
+  top: 2%;
   left: 5%;
 }
-.floating-amongus{
+.rocket {
   position: absolute;
-  top:0%;
-  right:3%;
+  left: 5%;
+  top: 97%;
+}
+
+@media (max-width: 1207px) {
+  .rocket {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+  }
+  .teeth{
+    display: none;
+  }
 }
 @media (max-width: 1024px) {
   .home-container {

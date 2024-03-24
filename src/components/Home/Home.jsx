@@ -2,14 +2,14 @@ import React from "react";
 import "./Home.css";
 import SusHacks from "../../assets/susHacks.png";
 import { ReactComponent as Start } from "../../assets/Start.svg";
-import rocket from "./assets/rocket.png";
-import amongusFloating from "./assets/Among_us__1_-removebg-preview (2) 1.png";
+import teeth from "./assets/Group 339 2.png"
+import rocket from "./assets/rocket.png"
 
 const Home = () => {
   return (
     <div id="home" className="home-container">
+      <img src={teeth} className="teeth"/>
       <img src={rocket} className="rocket"/>
-      <img src={amongusFloating} className="floating-amongus"/>
       <div className="logoo">
         <img src={SusHacks} alt="susHacks" className="susHacks" />
       </div>
