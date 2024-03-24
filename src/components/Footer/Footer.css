@@ -13,7 +13,16 @@
   align-items: center;
   justify-content: center;
 }
-
+.teeth-image{
+  margin-bottom: 50px;
+  
+}
+.start-specific{
+  margin-right: 100px;
+}
+.footer-content{
+  margin-bottom: 50px;;
+}
 .Footer-Description {
   flex: 1;
 }
@@ -21,6 +30,7 @@
   height: 200px;
   width: 200px;
 }
+
 .Footer-Description p {
   text-align: start;
   margin-left: 50px;

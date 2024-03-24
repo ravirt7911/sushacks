@@ -36,7 +36,29 @@
   transition: color 0.3s;
 }
 .register:hover {
-  color: lightblue; 
+  color: lightblue;
+}
+
+.teeth {
+  position: absolute;
+  top: 2%;
+  left: 5%;
+}
+.rocket {
+  position: absolute;
+  left: 8%;
+  top: 210%;
+}
+
+@media (max-width: 1207px) {
+  .rocket {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+  }
+  .teeth{
+    display: none;
+  }
 }
 @media (max-width: 1024px) {
   .home-container {
