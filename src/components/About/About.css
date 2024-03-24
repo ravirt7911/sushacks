@@ -10,12 +10,12 @@
 .planet {
   position: relative;
   height: 750px;
-  top:70px;
+  top: 70px;
 }
 
 .about-content p {
   position: absolute;
-  top: 53%;
+  top: 55%;
   left: 53%;
   transform: translate(-50%, -700%);
   z-index: 1;
@@ -75,6 +75,16 @@
 .planetCroped {
   display: none;
 }
+.amongus1 {
+  position: absolute;
+  right: 5%;
+  top: 60%;
+}
+@media (max-width: 1207px) {
+  .amongus1{
+    display: none;
+  }
+}
 
 @media (max-width: 1024px) {
   .amongus,
@@ -118,8 +128,8 @@
   }
   .about-content p {
     position: relative;
-    /* top: 50%;
-        left: 50%; */
+    /* top: 20%; */
+        /* left: 50%; */
     transform: translate(-50%, -1150%);
   }
   #content {
@@ -128,8 +138,7 @@
   }
 }
 @media (max-width: 740px) {
-  .home-about
-  {
+  .home-about {
     margin-top: -40px;
   }
   .crew img {
@@ -150,12 +159,12 @@
   }
   .about-content p {
     position: relative;
-    top: 350px;
-    font-size: 40px;
+    top: 375px;
+    font-size: 45px;
   }
   #content {
     position: relative;
-    top: 950px;
+    top: 910px;
     left: 20px;
     font-size: x-small;
     z-index: 1;

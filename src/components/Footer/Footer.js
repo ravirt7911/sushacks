@@ -4,14 +4,8 @@ import img1 from '../../assets/Group 339 1.png'
 import { ReactComponent as Start } from "../../assets/Start.svg";
 import SusHacks from "../../assets/susHacks.png";
 import img2 from '../../assets/Group 416.png'
-import Home from "../Home/Home";
-import About from "../About/About";
-import Tracks from "../Tracks/Tracks";
-import Timeline from "../Timeline/Timeline";
-import Prizes from "../Prizes/Prizes";
-import Sponsors from "../Sponsors/Sponsors";
-import Faqs from "../FAQs/Faqs";
-import Contact from "../Contact Us/Contactus";
+import vignanLogo from "./assest/2016-09-6-06-44-05_vignanlogo (1) 1.png";
+
 function Footer() {
   return (
     <div className="Footer-container">
@@ -35,6 +29,7 @@ function Footer() {
         <div className="Footer-address">
           <p className="text-email">sushacks.viit@gmail.com</p>
           <p className="text-email">Vignan's Institute Of Information Technology,Duvvada</p>
+          <img src={vignanLogo} className="vignanLogo" height="50px"/>
         </div>
       </div>
       <div className="Footer-Clubs">

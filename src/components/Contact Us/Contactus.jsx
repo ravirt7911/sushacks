@@ -36,7 +36,7 @@ function Contact() {
   }, [width]);
 
   return (
-    <div id="contactus"className=" contact-container">
+    <div id="contactus" className=" contact-container">
       <img src={contactImage} alt="Contact Us" className="contact-image" />
       <a
         href="https://www.instagram.com/sus_hacks_viit?igsh=OHY1cTI0dzNtNjYz"

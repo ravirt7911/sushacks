@@ -17,7 +17,7 @@
 .Footer-Description {
   flex: 1;
 }
-.Footer-Logo img {
+.Footer-Logo .sushacks {
   height: 200px;
   width: 200px;
 }
