@@ -12,7 +12,7 @@ const AccordionItem = ({ question, answer }) => {
     <div className={`accordion-container ${expanded ? "expanded" : ""}`}>
       <div className="ques">
         <div className="accordion-item">
-          <div className="question">{question}</div>
+          <div className="question" style={{fontWeight: 'bold'}}>{question}</div>
           <button className="toggle-button" onClick={toggleAccordion}>
             {expanded ? "▲" : "▼"}
           </button>
