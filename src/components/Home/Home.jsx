@@ -8,7 +8,7 @@ import rocket from "./assets/rocket.png"
 const Home = () => {
   return (
     <div id="home" className="home-container">
-      <img src={teeth} className="teeth"/>
+      
       <img src={rocket} className="rocket"/>
       <div className="logoo">
         <img src={SusHacks} alt="susHacks" className="susHacks" />

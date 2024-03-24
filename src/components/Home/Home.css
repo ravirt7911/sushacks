@@ -46,8 +46,8 @@
 }
 .rocket {
   position: absolute;
-  left: 5%;
-  top: 97%;
+  left: 8%;
+  top: 210%;
 }
 
 @media (max-width: 1207px) {
