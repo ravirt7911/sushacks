@@ -2,8 +2,7 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import "./Tracks.css";
 import img1 from "../../assets/amongusred.png";
-import ExpandLessIcon from '@material-ui/icons/ExpandLess';
-import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+
 const TracksData = [
   {
     title: "Fintech ",
@@ -69,63 +68,63 @@ const TracksData = [
 
 const Tracks = () => {
   const [index, setIndex] = useState(0);
-  const [tracksPosition, setTracksPosition] = useState(0);
-  const TracksUp =()=>{
-    if(tracksPosition>=0)
-    setTracksPosition(tracksPosition-400);
-  }
-  const TracksDown =()=>{
-    if(tracksPosition<0)
-    setTracksPosition(0);
-  }
+  const [tracksPosition, setTracksPosition] = useState(0); 
+
+  const handleTracksUp = () => {
+    if (tracksPosition === 0) {
+      setTracksPosition(-300);
+      console.log("Up");
+    }
+  };
+
+  const handleTracksDown = () => {
+    if (tracksPosition === -300) {
+      setTracksPosition(0); 
+      console.log("Down");
+    }
+  };
+
   return (
-    <div id="tracks" className="TracksHome">
+    <div className="TracksHome">
       <div className="TracksHeader">
         <div className="TracksIcon">
-          <img
-            src={img1}
-            alt=""
-            height="30px"
-            style={{ marginRight: "10px" }}
-          />
+          <img src={img1} alt="Tracks Icon" height="30px" style={{ marginRight: "10px" }} />
           <motion.div
             className="BlinkingCircle"
             animate={{ opacity: [0, 1, 0] }}
             transition={{ duration: 1.5, repeat: Infinity }}
-          ></motion.div>
+          />
           <p>XXXXXXXXXXX</p>
         </div>
-        <div className="TracksName">TRACKS</div>
+        <div className="TracksName">
+          TRACKS
+        </div>
       </div>
       <div className="TracksContainer">
         <div className="TracksMoveButtons">
-        <button className="TracksMoveUp" onClick={TracksUp} ><ExpandLessIcon/></button>
-        <button className="TracksMoveDown" onClick={TracksDown} ><ExpandMoreIcon/></button>
-      </div>
-        <div className="TracksButtons" >
-          
-          {TracksData.map((track, i) => (
-            <motion.button
-              className={`TracksButton ${index === i ? "active" : ""}`}
-              style={i === 0? { marginTop: `${tracksPosition}px` } : {}}
-              key={i}
-              onClick={() => {
-                setIndex(i);
-              }}
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.9 }}
-            >
-              {track.title}
-            </motion.button>
-          ))}
-          
+          <button className="TracksMoveUp" onClick={handleTracksUp}>
+            up
+          </button>
+          <button className="TracksMoveDown" onClick={handleTracksDown}>
+            down
+          </button>
         </div>
-        <motion.div
-          className="TracksDescriptionBox"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.5 }}
-        >
+        <div className="TracksButtons">
+            {TracksData.map((track, i) => (
+              <motion.button
+                key={i}
+                className={`TracksButton ${index === i ? "active" : ""}`}
+                style={i === 0 ?{ marginTop:`${tracksPosition}px`}:{}}
+                onClick={() => setIndex(i)}
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
+              >
+                {track.title}
+              </motion.button>
+            ))}
+          </div>
+
+        <motion.div className="TracksDescriptionBox" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5 }}>
           <h1>{TracksData[index].title}</h1>
           <p>{TracksData[index].description}</p>
         </motion.div>
