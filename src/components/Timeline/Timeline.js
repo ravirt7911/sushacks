@@ -3,8 +3,9 @@ import { Col, Container, Row } from "react-bootstrap";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import "./Timeline.css";
-import img1 from "./assets/img_1.png";
+import img1 from "./assets/reg-begins.png";
 import img2 from "./assets/img_2.png";
+import img3 from "./assets/reg-ends.png";
 import PhoneImg from "./assets/phn.jpg"
 const Timeline = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -32,14 +33,14 @@ const Timeline = () => {
 
   const timelineItems = [
     {
-      title: "Resgistration Begins",
+      title: "Registration Begins",
       date: "20-03-24",
       image: img1,
     },
     {
       title: "Registration Ends",
       date: "20-03-24",
-      image: img2,
+      image: img3,
     },
     {
       title: "Hacking Starts",
