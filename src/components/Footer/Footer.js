@@ -7,6 +7,9 @@ import img2 from '../../assets/Group 416.png'
 import vignanLogo from "./assets/2016-09-6-06-44-05_vignanlogo (1) 1.png";
 
 function Footer() {
+  const handleRegisterClick = () => {
+    window.location.href = "https://lu.ma/y9an02gq";
+  };
   return (
     <div className="Footer-container">
       <div className="Footer-Description">
@@ -14,7 +17,7 @@ function Footer() {
         <p className="footer-content">Dive deeper into the Sus-Hacks experience! Register now to join the community and secure your spot at the hackathon. Let's make a difference together!</p>
         <div className="start start-specific">
           <Start className="start-register" />
-          <a href="#" className="register">
+          <a onClick={handleRegisterClick} className="register">
             REGISTER
           </a>
         </div>

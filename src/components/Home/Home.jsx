@@ -6,6 +6,9 @@ import teeth from "./assets/Group 339 2.png"
 import rocket from "./assets/rocket.png"
 
 const Home = () => {
+  const handleRegisterClick = () => {
+    window.location.href = "https://lu.ma/y9an02gq";
+  };
   return (
     <div id="home" className="home-container">
       
@@ -15,7 +18,7 @@ const Home = () => {
       </div>
       <div className="start">
         <Start className="start-register" />
-        <a href="#" className="register">
+        <a onClick={handleRegisterClick} className="register">
           REGISTER
         </a>
       </div>
