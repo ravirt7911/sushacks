@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import "./Tracks.css";
 import img1 from "../../assets/amongusred.png";
-
+import ExpandLessIcon from '@material-ui/icons/ExpandLess';
+import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 const TracksData = [
   {
     title: "Fintech ",
@@ -71,11 +72,11 @@ const Tracks = () => {
   const [tracksPosition, setTracksPosition] = useState(0);
   const TracksUp =()=>{
     if(tracksPosition>=0)
-    setTracksPosition(tracksPosition-70);
+    setTracksPosition(tracksPosition-400);
   }
   const TracksDown =()=>{
     if(tracksPosition<0)
-    setTracksPosition(tracksPosition+70);
+    setTracksPosition(0);
   }
   return (
     <div id="tracks" className="TracksHome">
@@ -98,15 +99,15 @@ const Tracks = () => {
       </div>
       <div className="TracksContainer">
         <div className="TracksMoveButtons">
-        <button className="TracksMove" onClick={TracksUp} >up</button>
-        <button className="TracksMove" onClick={TracksDown} >down</button>
+        <button className="TracksMoveUp" onClick={TracksUp} ><ExpandLessIcon/></button>
+        <button className="TracksMoveDown" onClick={TracksDown} ><ExpandMoreIcon/></button>
       </div>
-        <div className="TracksButtons" style={{marginTop:`${tracksPosition}px`}}>
+        <div className="TracksButtons" >
           
           {TracksData.map((track, i) => (
             <motion.button
               className={`TracksButton ${index === i ? "active" : ""}`}
-              style={i === TracksData.length-1 ? { marginTop: `${tracksPosition}px` } : {}}
+              style={i === 0? { marginTop: `${tracksPosition}px` } : {}}
               key={i}
               onClick={() => {
                 setIndex(i);

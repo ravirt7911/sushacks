@@ -99,10 +99,48 @@
   letter-spacing: 1px;
   border-radius: 5px;
 }
-
-
+.TracksButton:nth-child(5)
+{
+ margin-bottom: 205px;
+}
+.TracksButton:nth-child(10)
+{
+ margin-bottom: 10px;
+}
+.TracksMoveButtons
+{
+  position: absolute;
+  left: 185px;
+  height: 500px;
+}
+.TracksMoveUp
+{
+  margin-top: 100px;
+  border-radius: 100%;
+  padding: 5px;
+  border: none;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 900;
+  color: aliceblue;
+}
+.TracksMoveDown
+{
+  margin-top: 230px;
+  border-radius: 100%;
+  padding: 5px;
+  border: none;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 900;
+  color: aliceblue;
+}
 .TracksButton.active {
-  margin-top: 5px;
+  margin-top: 205px;
   padding: 7px;
   background-color: #b9f2eb;
   color: black;
