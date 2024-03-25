@@ -99,9 +99,7 @@
   letter-spacing: 1px;
   border-radius: 5px;
 }
-.TracksButton:nth-child(6){
-  margin-top: 70px;
-}
+
 
 .TracksButton.active {
   margin-top: 5px;

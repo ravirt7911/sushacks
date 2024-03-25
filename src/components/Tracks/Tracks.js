@@ -68,11 +68,14 @@ const TracksData = [
 
 const Tracks = () => {
   const [index, setIndex] = useState(0);
-  const TracksUp = ()=>{
-    console.log("move up");
+  const [tracksPosition, setTracksPosition] = useState(0);
+  const TracksUp =()=>{
+    if(tracksPosition>=0)
+    setTracksPosition(tracksPosition-70);
   }
-  const TracksDown = ()=>{
-    console.log("move up");
+  const TracksDown =()=>{
+    if(tracksPosition<0)
+    setTracksPosition(tracksPosition+70);
   }
   return (
     <div id="tracks" className="TracksHome">
@@ -94,11 +97,16 @@ const Tracks = () => {
         <div className="TracksName">TRACKS</div>
       </div>
       <div className="TracksContainer">
-        <div className="TracksButtons">
-        <button className="TracksMove" onClick={TracksUp}>up</button>
+        <div className="TracksMoveButtons">
+        <button className="TracksMove" onClick={TracksUp} >up</button>
+        <button className="TracksMove" onClick={TracksDown} >down</button>
+      </div>
+        <div className="TracksButtons" style={{marginTop:`${tracksPosition}px`}}>
+          
           {TracksData.map((track, i) => (
             <motion.button
               className={`TracksButton ${index === i ? "active" : ""}`}
+              style={i === TracksData.length-1 ? { marginTop: `${tracksPosition}px` } : {}}
               key={i}
               onClick={() => {
                 setIndex(i);
@@ -109,7 +117,7 @@ const Tracks = () => {
               {track.title}
             </motion.button>
           ))}
-          <button className="TracksMove" onClick={TracksDown}>down</button>
+          
         </div>
         <motion.div
           className="TracksDescriptionBox"
