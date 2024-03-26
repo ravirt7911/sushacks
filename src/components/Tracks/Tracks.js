@@ -108,7 +108,7 @@ const Tracks = () => {
             {TracksData.map((track, i) => (
               <motion.button
                 key={i}
-                className={`TracksButton ${index === i || i===tracksPosition ? "active" : ""}`}
+                className={`TracksButton ${index === i ? "active" : ""}`}
                 onClick={() => setIndex(i)}
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
