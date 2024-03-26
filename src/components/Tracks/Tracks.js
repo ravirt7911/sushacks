@@ -71,19 +71,14 @@ const Tracks = () => {
   const [tracksPosition, setTracksPosition] = useState(0); 
 
   const handleTracksUp = () => {
-    if (tracksPosition === 0) {
-      setTracksPosition(-300);
+      setIndex(index-1===-1?TracksData.length-1:index-1);
       console.log("Up");
-    }
   };
 
   const handleTracksDown = () => {
-    if (tracksPosition === -300) {
-      setTracksPosition(0); 
+      setIndex((index+1)%TracksData.length); 
       console.log("Down");
     }
-  };
-
   return (
     <div className="TracksHome" id="Tracks">
       <div className="TracksHeader">
@@ -113,8 +108,7 @@ const Tracks = () => {
             {TracksData.map((track, i) => (
               <motion.button
                 key={i}
-                className={`TracksButton ${index === i ? "active" : ""}`}
-                style={i === 0 ?{ marginTop:`${tracksPosition}px`}:{}}
+                className={`TracksButton ${index === i || i===tracksPosition ? "active" : ""}`}
                 onClick={() => setIndex(i)}
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
