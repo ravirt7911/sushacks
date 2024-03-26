@@ -79,6 +79,7 @@
 .progress-partitions {
   display: flex;
   align-items: center;
+  background-color:#CDCDCD;
 }
 
 .progress-item {

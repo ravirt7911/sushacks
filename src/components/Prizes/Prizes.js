@@ -1,6 +1,6 @@
 import React from "react";
 import "./Prizes.css";
-import PrizeMoney from "../../assets/Group 375.svg";
+import PrizeMoney from "../../assets/Prizes.png";
 import Prize from "../../assets/image 6.svg";
 const Prizes = () => {
   return (

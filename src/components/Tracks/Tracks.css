@@ -1,5 +1,6 @@
 .TracksHome
 {
+  margin: 20px;
     height:60vh;
     background-color:#1A282F;
     display: flex;
@@ -26,6 +27,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    border-radius: 5px;
     width: 200px;
 }
 .TracksIcon
@@ -89,7 +91,7 @@
   border: 5px solid #00ffe0;
   border-radius: 5px;
   margin: 10px;
-  max-height: 200px;
+  max-height: 230px;
   overflow: hidden;
 }
 .TracksButton {
@@ -108,6 +110,40 @@
 {
   margin-bottom: 110px;
 }
+.TracksMoveButtons
+{
+  position: absolute;
+  left: 170px;
+  transform: translateY(-250px);
+  height: 1px;
+}
+.TracksMoveUp
+{
+  transform: translateY(80px);
+  border-radius: 100%;
+  padding: 5px;
+  border: none;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 900;
+  color: aliceblue;
+}
+.TracksMoveDown
+{
+  transform: translateY(370px);
+  border-radius: 100%;
+  padding: 5px;
+  border: none;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 900;
+  color: aliceblue;
+}
+
 .TracksButton.active {
     padding: 7px;
     background-color: #B9F2EB;

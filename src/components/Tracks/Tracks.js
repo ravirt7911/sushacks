@@ -85,7 +85,7 @@ const Tracks = () => {
   };
 
   return (
-    <div className="TracksHome">
+    <div className="TracksHome" id="Tracks">
       <div className="TracksHeader">
         <div className="TracksIcon">
           <img src={img1} alt="Tracks Icon" height="30px" style={{ marginRight: "10px" }} />

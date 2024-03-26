@@ -1,9 +1,9 @@
 import React from "react";
 import "./Footer.css";
-import img1 from '../../assets/Group 339 1.png'
+import img1 from '../../assets/fangCrew.png'
 import { ReactComponent as Start } from "../../assets/Start.svg";
 import SusHacks from "../../assets/susHacks.png";
-import img2 from '../../assets/Group 416.png'
+import img2 from '../../assets/community-partner.png'
 import vignanLogo from "./assets/2016-09-6-06-44-05_vignanlogo (1) 1.png";
 
 function Footer() {
@@ -27,7 +27,6 @@ function Footer() {
           <img src={SusHacks} alt="susHacks" className="susHacks" style={{ height: "220px", width: "230px" }}/>
         </div>
         <div className="Footer-profiles">
-          {/* Add social media profiles or links here */}
         </div>
         <div className="Footer-address">
           <p className="text-email">sushacks.viit@gmail.com</p>
@@ -54,7 +53,7 @@ function Footer() {
         <div className="Footer-Community-partners">
           <h5>Community partner</h5>
           <div>
-            <img src={img2} height={80} width={250} alt="" />
+            <img src={img2} height={80} width={350} alt="" className="community-img"/>
           </div>
         </div>
       </div>
