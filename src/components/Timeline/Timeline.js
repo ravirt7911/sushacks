@@ -3,9 +3,17 @@ import { Col, Container, Row } from "react-bootstrap";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import "./Timeline.css";
-import img1 from "./assets/reg-begins.png";
-import img2 from "./assets/img_2.png";
-import img3 from "./assets/reg-ends.png";
+import img0 from "../../assets/Picture10.png"
+import img1 from "../../assets/Picture2.png"
+import img2 from "../../assets/Picture11.png"
+import img3 from "../../assets/Picture12.png"
+import img4 from "../../assets/Picture13.jpg"
+import img5 from "../../assets/Picture14.jpg"
+import img6 from "../../assets/Picture183.png"
+import img7 from "../../assets/Picture185.png"
+import img8 from "../../assets/Picture17.png"
+import img9 from "../../assets/Picture184.png"
+import img10  from "../../assets/img_3.png"
 import PhoneImg from "./assets/phn.jpg"
 const Timeline = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -33,38 +41,68 @@ const Timeline = () => {
 
   const timelineItems = [
     {
-      title: "Registration Begins",
+      title: "Registration Start",
       date: "20-03-24",
-      image: img1,
+      image: img0,
     },
     {
       title: "Registration Ends",
-      date: "20-03-24",
+      date: "10-04-24",
+      image: img2,
+    },
+    {
+      title: "TEAMS SHORTLISTING STARTS",
+      date: "17-04-24",
       image: img3,
     },
     {
-      title: "Hacking Starts",
+      title: "TEAMS SHORTLISTING ENDS",
       date: "20-03-24",
+      image: img4,
+    },
+    {
+      title: "DAYS OF HACKING",
+      date: "27-04-24 & 28-04-24",
+      image: img5,
+    },
+    {
+      title: "OPENING CERMONY",
+      date: "9:30 AM To 11:00 AM",
       image: img1,
     },
     {
-      title: "Hacking Ends",
-      date: "20-03-24",
-      image: img2,
+      title: "HACKATHON STARTS",
+      date: "01:00 TO 2:00 PM",
+      image: img8,
     },
     {
-      title: "Hacking Ends",
-      date: "20-03-24",
+      title: "LUNCH BREAK",
+      date: "1:00 TO 2:00 PM",
+      image: img6,
+    },
+    {
+      title: "DINNER BREAK",
+      date: "9:00 TO 12:00 PM",
+      image: img9,
+    },
+    {
+      title: "BREAKFAST",
+      date: "7:30PM",
+      image: img7,
+    },
+    {
+      title: "HACKATHON ENDS",
+      date: "11:00AM",
+      image: img10,
+    },
+    {
+      title: "EVALUATION & JUDGEMENT",
+      date: "12:30 PM",
       image: img1,
     },
     {
-      title: "Hacking Ends",
-      date: "20-03-24",
-      image: img2,
-    },
-    {
-      title: "Hacking Ends",
-      date: "20-03-24",
+      title: "VALEDICTORY FUNCTION",
+      date: "1:30PM",
       image: img1,
     },
   ];

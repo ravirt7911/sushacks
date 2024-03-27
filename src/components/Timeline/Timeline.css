@@ -89,7 +89,7 @@
 }
 
 .progress-item.filled {
-  background-color: green; /* Color for filled partitions */
+  background-color: rgb(41, 211, 41); /* Color for filled partitions */
 }
 
 @media screen and (max-width: 768px) {
