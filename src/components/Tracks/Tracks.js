@@ -24,36 +24,36 @@ const TracksData = [
     description:
       "Agritech harnesses technology to optimize agricultural practices, from precision farming and crop monitoring to supply chain management, aiming to increase productivity, sustainability, and profitability in the agriculture industry.",
   },
-  {
-    title: "Greentech ",
-    description:
-      "Greentech focuses on developing sustainable technology solutions to address environmental challenges, including renewable energy, waste management, and eco-friendly manufacturing, promoting a greener and more sustainable future.",
-  },
+  // {
+  //   title: "Greentech ",
+  //   description:
+  //     "Greentech focuses on developing sustainable technology solutions to address environmental challenges, including renewable energy, waste management, and eco-friendly manufacturing, promoting a greener and more sustainable future.",
+  // },
   // {
   //   title: "Retailtech (Retail Technology)",
   //   description:
   //     "Retailtech revolutionizes the retail industry by integrating technology into every aspect of the shopping experience, from online platforms and e-commerce solutions to personalized marketing and inventory management.",
   // },
-  {
-    title: "Traveltech ",
-    description:
-      "Traveltech transforms the travel industry by leveraging technology to enhance booking experiences, streamline logistics, and provide personalized travel recommendations, ultimately improving convenience and efficiency for travelers.",
-  },
-  {
-    title: "Socialtech ",
-    description:
-      "Socialtech explores innovative ways to leverage technology for social good, including social networking platforms, community-building tools, and digital activism, fostering connections and driving positive societal change.",
-  },
+  // {
+  //   title: "Traveltech ",
+  //   description:
+  //     "Traveltech transforms the travel industry by leveraging technology to enhance booking experiences, streamline logistics, and provide personalized travel recommendations, ultimately improving convenience and efficiency for travelers.",
+  // },
+  // {
+  //   title: "Socialtech ",
+  //   description:
+  //     "Socialtech explores innovative ways to leverage technology for social good, including social networking platforms, community-building tools, and digital activism, fostering connections and driving positive societal change.",
+  // },
   // {
   //   title: "Logistics and Supply Chain",
   //   description:
   //     "Logistics and Supply Chain utilizes technology to optimize the movement of goods and materials, from inventory management and transportation logistics to supply chain visibility and real-time tracking, enhancing efficiency and reducing costs in global supply chains.",
   // },
-  {
-    title: "Cybersecurity",
-    description:
-      "Cybersecurity focuses on protecting digital systems, networks, and data from cyber threats and attacks, employing advanced technologies and strategies to safeguard sensitive information and ensure the integrity and confidentiality of digital assets.",
-  },
+  // {
+  //   title: "Cybersecurity",
+  //   description:
+  //     "Cybersecurity focuses on protecting digital systems, networks, and data from cyber threats and attacks, employing advanced technologies and strategies to safeguard sensitive information and ensure the integrity and confidentiality of digital assets.",
+  // },
   {
     title: "Decentralized Web",
     description:
@@ -97,12 +97,12 @@ const Tracks = () => {
       </div>
       <div className="TracksContainer">
         <div className="TracksMoveButtons">
-          <button className="TracksMoveUp" onClick={handleTracksUp}>
+          {/* <button className="TracksMoveUp" onClick={handleTracksUp}>
             up
           </button>
           <button className="TracksMoveDown" onClick={handleTracksDown}>
             down
-          </button>
+          </button> */}
         </div>
         <div className="TracksButtons">
             {TracksData.map((track, i) => (
