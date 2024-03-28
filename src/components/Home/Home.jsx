@@ -7,7 +7,7 @@ import rocket from "./assets/rocket.png"
 
 const Home = () => {
   const handleRegisterClick = () => {
-    window.location.href = "https://lu.ma/y9an02gq";
+    window.location.href = "https://lu.ma/sus-hacks";
   };
   return (
     <div id="home" className="home-container">
