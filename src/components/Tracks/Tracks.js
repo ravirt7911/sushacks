@@ -68,55 +68,57 @@ const TracksData = [
 
 const Tracks = () => {
   const [index, setIndex] = useState(0);
-  const TracksUp = ()=>{
-    console.log("move up");
-  }
-  const TracksDown = ()=>{
-    console.log("move up");
-  }
+  const [tracksPosition, setTracksPosition] = useState(0); 
+
+  const handleTracksUp = () => {
+      setIndex(index-1===-1?TracksData.length-1:index-1);
+      console.log("Up");
+  };
+
+  const handleTracksDown = () => {
+      setIndex((index+1)%TracksData.length); 
+      console.log("Down");
+    }
   return (
-    <div id="tracks" className="TracksHome">
+    <div className="TracksHome" id="Tracks">
       <div className="TracksHeader">
         <div className="TracksIcon">
-          <img
-            src={img1}
-            alt=""
-            height="30px"
-            style={{ marginRight: "10px" }}
-          />
+          <img src={img1} alt="Tracks Icon" height="30px" style={{ marginRight: "10px" }} />
           <motion.div
             className="BlinkingCircle"
             animate={{ opacity: [0, 1, 0] }}
             transition={{ duration: 1.5, repeat: Infinity }}
-          ></motion.div>
+          />
           <p>XXXXXXXXXXX</p>
         </div>
-        <div className="TracksName">TRACKS</div>
+        <div className="TracksName">
+          TRACKS
+        </div>
       </div>
       <div className="TracksContainer">
-        <div className="TracksButtons">
-        <button className="TracksMove" onClick={TracksUp}>up</button>
-          {TracksData.map((track, i) => (
-            <motion.button
-              className={`TracksButton ${index === i ? "active" : ""}`}
-              key={i}
-              onClick={() => {
-                setIndex(i);
-              }}
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.9 }}
-            >
-              {track.title}
-            </motion.button>
-          ))}
-          <button className="TracksMove" onClick={TracksDown}>down</button>
+        <div className="TracksMoveButtons">
+          <button className="TracksMoveUp" onClick={handleTracksUp}>
+            up
+          </button>
+          <button className="TracksMoveDown" onClick={handleTracksDown}>
+            down
+          </button>
         </div>
-        <motion.div
-          className="TracksDescriptionBox"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.5 }}
-        >
+        <div className="TracksButtons">
+            {TracksData.map((track, i) => (
+              <motion.button
+                key={i}
+                className={`TracksButton ${index === i ? "active" : ""}`}
+                onClick={() => setIndex(i)}
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
+              >
+                {track.title}
+              </motion.button>
+            ))}
+          </div>
+
+        <motion.div className="TracksDescriptionBox" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5 }}>
           <h1>{TracksData[index].title}</h1>
           <p>{TracksData[index].description}</p>
         </motion.div>

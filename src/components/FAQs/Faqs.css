@@ -53,17 +53,16 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-radius: 20px;
 }
 
 .question {
   color: white;
   justify-content: center;
   align-items: center;
-  font-size: 30px;
+  font-size: 1.4rem;
   flex-grow: 1;
   border-radius: 20px;
-  text-shadow: 0 0 50px silver;
+  font-family: var(--font);
 }
 
 .toggle-button {
@@ -87,8 +86,10 @@
   background-size: cover;
   background-position: center;
   margin-bottom: 20px;
+  margin-top: 10px;
   border-radius: 20px;
-  font-size: 30px;
+  font-size: 1.1rem;
+  font-family: var(--font);
   transition: height 0.3s;
   display: none;
   color: white;
@@ -108,9 +109,11 @@
   background-size: cover;
   padding-left: 18px;
   padding-top: 9px;
+  padding-bottom:10px;
+  border-radius: 25px;
+  border: 2px solid white;
   text-align: left;
 }
-
 @media (max-width: 1024px) {
   .faqs {
     display: flex;

@@ -1,7 +1,7 @@
 .timeline {
   font-family: "among us";
   color: white;
-  display: flex;
+  
   justify-content: center;
   align-items: center;
 }
@@ -23,9 +23,9 @@
   margin-bottom: 0px;
 }
 .timeline-slider .item img {
-  height: 300px;
+  height: 200px;
   width: 150px;
-  margin-bottom: 0;
+  margin-top: 60px;
 }
 .phone-container {
   position: relative; /* Make the container position relative */
@@ -79,6 +79,7 @@
 .progress-partitions {
   display: flex;
   align-items: center;
+  background-color:#CDCDCD;
 }
 
 .progress-item {
@@ -88,7 +89,7 @@
 }
 
 .progress-item.filled {
-  background-color: green; /* Color for filled partitions */
+  background-color: rgb(41, 211, 41); /* Color for filled partitions */
 }
 
 @media screen and (max-width: 768px) {

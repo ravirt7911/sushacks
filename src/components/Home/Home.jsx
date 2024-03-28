@@ -6,16 +6,19 @@ import teeth from "./assets/Group 339 2.png"
 import rocket from "./assets/rocket.png"
 
 const Home = () => {
+  const handleRegisterClick = () => {
+    window.location.href = "https://lu.ma/sus-hacks";
+  };
   return (
     <div id="home" className="home-container">
-      <img src={teeth} className="teeth"/>
+      
       <img src={rocket} className="rocket"/>
       <div className="logoo">
         <img src={SusHacks} alt="susHacks" className="susHacks" />
       </div>
       <div className="start">
         <Start className="start-register" />
-        <a href="#" className="register">
+        <a onClick={handleRegisterClick} className="register">
           REGISTER
         </a>
       </div>

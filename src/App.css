@@ -29,7 +29,8 @@ body {
 
 
 body {
-    background-image: url(../src/assets/back.png);
+    background-image: url('./assets/among-us-space-background-7lnv75phvu5reodb.png');
+    background-size: 600px;
     font-family: "Among Us";
 }
 
