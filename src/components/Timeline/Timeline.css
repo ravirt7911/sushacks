@@ -1,7 +1,7 @@
 .timeline {
   font-family: "among us";
   color: white;
-  
+
   justify-content: center;
   align-items: center;
 }
@@ -38,18 +38,17 @@
   justify-content: center; /* Center horizontally */
   align-items: center; /* Center vertically */
 }
-.phone-container img{
+.phone-container img {
   height: 450px;
   width: 1050px;
   border-radius: 20px;
 }
-.phone-screen
-{
+.phone-screen {
   position: absolute;
-  left:70px;
+  left: 70px;
   z-index: 100;
-  height:450px;
-  width:900px;
+  height: 450px;
+  width: 900px;
 }
 .timeline-bx {
   height: 100%;
@@ -79,7 +78,7 @@
 .progress-partitions {
   display: flex;
   align-items: center;
-  background-color:#CDCDCD;
+  background-color: #cdcdcd;
 }
 
 .progress-item {
@@ -121,8 +120,10 @@
 }
 
 @media screen and (max-width: 480px) {
-  .progress-bar
-  {
+  .timeline {
+    margin-left: 7vw;
+  }
+  .progress-bar {
     margin-left: 47px;
     margin-top: 20px;
   }
@@ -148,28 +149,25 @@
     height: 8px;
     margin: 0 1px;
   }
-  .phone-container
-  {
+  .phone-container {
     margin-left: 50px;
   }
-  .phone-container img{
-    
+  .phone-container img {
     height: 200px;
     width: 300px;
     border-radius: 5px;
     transform: rotate(270deg);
     margin-left: -50px;
   }
-  .item img{
+  .item img {
     transform: rotate(0deg);
     margin-left: 10px;
   }
-  .phone-screen
-  {
+  .phone-screen {
     position: absolute;
     left: 0px;
     z-index: 100;
-    height:250px;
-    width:200px;
+    height: 250px;
+    width: 200px;
   }
 }
