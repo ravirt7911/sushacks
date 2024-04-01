@@ -72,7 +72,7 @@ const Timeline = () => {
     },
     {
       title: "HACKATHON STARTS",
-      date: "01:00 TO 2:00 PM",
+      date: "11:00 AM",
       image: img8,
     },
     {
@@ -82,12 +82,12 @@ const Timeline = () => {
     },
     {
       title: "DINNER BREAK",
-      date: "9:00 TO 12:00 PM",
+      date: "9:00 TO 10:00 PM",
       image: img9,
     },
     {
       title: "BREAKFAST",
-      date: "7:30PM",
+      date: "7:30 AM",
       image: img7,
     },
     {
