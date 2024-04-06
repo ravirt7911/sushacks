@@ -92,7 +92,7 @@ const Timeline = () => {
     },
     {
       title: "HACKATHON ENDS",
-      date: "11:00AM",
+      date: "11:00 AM",
       image: img10,
     },
     {
@@ -101,8 +101,8 @@ const Timeline = () => {
       image: img1,
     },
     {
-      title: "VALEDICTORY FUNCTION",
-      date: "1:30PM",
+      title: "valedictory function",
+      date: "1:30 PM",
       image: img1,
     },
   ];
@@ -117,7 +117,7 @@ const Timeline = () => {
               key={index}
               className={`progress-item ${
                 index <= currentSlide ? "filled" : ""
-              }`}
+                }`}
             />
           ))}
         </div>
@@ -145,8 +145,8 @@ const Timeline = () => {
                     {timelineItems.map((item, index) => (
                       <div key={index} className="item">
                         <img src={item.image} alt={item.title} />
-                        <h5>{item.title}</h5>
-                        <p>{item.date}</p>
+                        <h5>{item.title.toLowerCase()}</h5>
+                        <p>{item.date.toUpperCase()}</p>
                       </div>
                     ))}
                   </Carousel>
