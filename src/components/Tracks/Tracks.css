@@ -168,7 +168,7 @@
     margin-left: 35px;
     margin-right: 35px;
     display: block;
-    height:80vh;
+    height:85vh;
   }
   .TracksHome h1
   {
@@ -188,14 +188,7 @@
   }
   .TracksButtons
   {
-    border: none;
-    overflow: auto;
-    display: flex;
-    flex:0;
-    flex-direction: row;
-    height:100px;
-    width:100px;
-    margin-bottom: -10px;
+    display: none;
   }
   .TracksDescriptionBox
   {

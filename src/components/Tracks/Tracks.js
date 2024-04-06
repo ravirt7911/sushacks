@@ -117,7 +117,7 @@ const Tracks = () => {
               </motion.button>
             ))}
           </div>
-
+        <h2 className="Tracks-Heading">{TracksData[index].title}</h2>
         <motion.div className="TracksDescriptionBox" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5 }}>
           <h1>{TracksData[index].title}</h1>
           <p>{TracksData[index].description}</p>
