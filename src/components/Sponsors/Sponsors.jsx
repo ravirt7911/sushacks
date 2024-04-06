@@ -4,7 +4,7 @@ import mongo from "./images/mongo 1.svg";
 import devpost from "./images/dev-removebg-preview 1.svg";
 import polygon from "./images/polygon 1.svg";
 import hedra from "./images/hedra-removebg-preview 1.svg";
-import satverse from "./images/Satverse.jpg"
+import satverse from "./images/Satverse.jpg";
 import cloud from "./images/img2-removebg-preview 1.svg";
 import angelImg from "./images/Among_Us_Angel_Sticker-removebg-preview.png";
 
@@ -14,7 +14,7 @@ export default function Sponsors() {
       <p className="heading">SPONSORS</p>
       <img id="angel" src={angelImg} height="180px" />
       <div className="sponsors-divs">
-        <p style={{ color: "#78B4DF", fontSize: "100px" }}>PLATINUM</p>
+        <p style={{ color: "#EAD774", fontSize: "100px" }}>GOLD</p>
         {/* <div className="sponsors-imgs">
         <a href="#">
             <img src={devpost} /></a>
@@ -23,7 +23,7 @@ export default function Sponsors() {
         </div> */}
       </div>
       <div className="sponsors-divs">
-        <p style={{ color: "#EAD774", fontSize: "100px" }}>GOLD</p>
+        <p style={{ color: "#FFFCEA", fontSize: "100px" }}>SILVER</p>
         {/* <div className="sponsors-imgs">
         <a href="#">
             <img src={polygon} /></a>
@@ -32,10 +32,11 @@ export default function Sponsors() {
         </div> */}
       </div>
       <div className="sponsors-divs">
-        <p style={{ color: "#FFFCEA", fontSize: "100px" }}>SILVER</p>
+        <p style={{ color: "#CD7F32", fontSize: "100px" }}>BRONZE</p>
         <div className="sponsors-imgs">
-        <a href="#">
-           <img src={satverse} /></a>
+          <a href="#">
+            <img src={satverse} />
+          </a>
         </div>
       </div>
     </div>
