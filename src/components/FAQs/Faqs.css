@@ -127,6 +127,21 @@
 }
 
 @media (max-width: 580px) {
+  .ques
+  {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .content h1
+  {
+    font-size: 4rem;
+    margin-left: -10px;
+  }
+  .content img{
+    height: 80px;
+    width: 80px;
+  }
   .faqs {
     display: flex;
     justify-content: center;
@@ -135,10 +150,22 @@
   .accordion-container {
     width: 400px;
     display: flex;
-    justify-content: space-between;
+    padding-bottom: 10px;
+    justify-content: space-around;
   }
-  .question ,.answer{
-    font-size: 23px;
+  .accordion-item .question {
+    font-size: 0.9rem;
+    text-shadow: 0px 0px 1px;
+  }
+  .toggle-button
+  {
+    position: absolute;
+    right: -25px;
+  }
+  .ques .answer
+  {
+    font-size: 0.8rem;
+    text-shadow: 0px 0px 17px black;
   }
 }
 
