@@ -32,10 +32,10 @@ export default function Sponsors() {
         </div> */}
       </div>
       <div className="sponsors-divs">
-        <p style={{ color: "#CD7F32", fontSize: "100px" }}>BRONZE</p>
+        <p >BRONZE</p>
         <div className="sponsors-imgs">
           <a href="#">
-            <img src={satverse} />
+            <img  src={satverse} />
           </a>
         </div>
       </div>

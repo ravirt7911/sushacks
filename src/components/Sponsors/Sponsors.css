@@ -58,8 +58,15 @@
 }
 
 @media (max-width: 740px) {
+  .sponsors-imgs img{
+    width: 400px;
+  }
   .sponsors{
     margin-bottom: 50px;
+  }
+  .heading
+  {
+    font-size: 0.7rem;
   }
   .sponsors-imgs {
     display: flex;
@@ -69,7 +76,6 @@
   .sponsors-divs .sponsors-imgs a img {
     width: 220px;
   }
-
   .sponsors-divs p{
     margin: 5%;
   }

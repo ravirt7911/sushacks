@@ -52,6 +52,11 @@ const Faqs = () => {
           question="How can I stay updated on Sus-Hacks?"
           answer="Follow us on social media  for the latest updates, announcements, and important information leading up to Sus-Hacks. Don't miss out!"
         />
+        <AccordionItem
+          id="ques11"
+          question="How can I stay updated on Sus-Hacks?"
+          answer="Follow us on social media  for the latest updates, announcements, and important information leading up to Sus-Hacks. Don't miss out!"
+        />
       </div>
     </div>
   );

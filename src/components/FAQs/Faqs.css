@@ -157,6 +157,9 @@
     font-size: 0.9rem;
     text-shadow: 0px 0px 1px;
   }
+  .ques{
+    background-color: rgba(189, 26, 26, 0.2);
+  }
   .toggle-button
   {
     position: absolute;
