@@ -110,7 +110,7 @@ const Timeline = () => {
   const progressBar = (
     <div id="timeline"className=" progress-bar">
       <div className="progress-text">
-        Total Tasks Completed
+        <span>Total Tasks Completed</span>
         <div className="progress-partitions">
           {timelineItems.map((item, index) => (
             <div

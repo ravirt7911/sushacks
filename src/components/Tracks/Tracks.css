@@ -178,7 +178,7 @@
     display: flex;
     flex-wrap: nowrap;
     flex-direction: column;
-    margin-top: 80px;
+    margin-top: 10px;
   }
   .TracksIcon p{
    margin-left: 60px;
@@ -188,7 +188,7 @@
   }
   .TracksButtons
   {
-    border: 2px solid #00ffe0;
+    border: none;
     overflow: auto;
     display: flex;
     flex:0;
@@ -207,25 +207,27 @@
     text-align: start;
   }
   .TracksButton {
+    color: #e8eeed;
     margin-left: 20px;
     margin-top: 0px;
     width: 300px;
     margin-right: 70px;
+    border: none;
     padding: 7px;
-    background-color: black;
-    border: 0px solid #00ffe0;
-    font-size: 1.5rem;
+    font-weight: 400px;
+    font-size: 2rem;
     letter-spacing: 1px;
     border-radius: 5px;
   }
   .TracksButton.active {
     margin-top: 5px;
     padding: 7px;
-    background-color: black;
-    color: white;
+    background-color: transparent;
+    color: #f5faf9;
     border: none;
     font-family: "Among Us";
-    font-size: 1.3rem;
+    font-weight: 400px;
+    font-size: 2rem;
     letter-spacing: 1px;
     border-radius: 5px;
   }

@@ -18,8 +18,8 @@ const Home = () => {
       </div>
       <div className="start">
         <Start className="start-register" />
-        <a onClick={handleRegisterClick} className="register">
-          REGISTER
+        <a onClick={handleRegisterClick} className="register" >
+          <span>REGISTER</span>
         </a>
       </div>
     </div>
