@@ -57,6 +57,7 @@
 @media (max-width: 1024px) {
   .contact-image {
     width: 700px;
+    margin-top: 40px;
   }
   #insta {
     position: absolute;

@@ -35,10 +35,6 @@
     1px 1px 0 white;
   transition: color 0.3s;
 }
-.register:hover {
-  color: lightblue;
-}
-
 .teeth {
   position: absolute;
   top: 2%;

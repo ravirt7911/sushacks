@@ -7,7 +7,7 @@ import rocket from "./assets/rocket.png"
 
 const Home = () => {
   const handleRegisterClick = () => {
-    window.location.href = "https://lu.ma/y9an02gq";
+    window.location.href = "https://lu.ma/sus-hacks";
   };
   return (
     <div id="home" className="home-container">
@@ -18,8 +18,8 @@ const Home = () => {
       </div>
       <div className="start">
         <Start className="start-register" />
-        <a onClick={handleRegisterClick} className="register">
-          REGISTER
+        <a onClick={handleRegisterClick} className="register" >
+          <span>REGISTER</span>
         </a>
       </div>
     </div>

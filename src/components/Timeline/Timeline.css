@@ -1,7 +1,7 @@
 .timeline {
   font-family: "among us";
   color: white;
-  
+
   justify-content: center;
   align-items: center;
 }
@@ -38,18 +38,17 @@
   justify-content: center; /* Center horizontally */
   align-items: center; /* Center vertically */
 }
-.phone-container img{
+.phone-container img {
   height: 450px;
   width: 1050px;
   border-radius: 20px;
 }
-.phone-screen
-{
+.phone-screen {
   position: absolute;
-  left:70px;
+  left: 70px;
   z-index: 100;
-  height:450px;
-  width:900px;
+  height: 450px;
+  width: 900px;
 }
 .timeline-bx {
   height: 100%;
@@ -70,7 +69,7 @@
 
 .progress-text {
   color: white;
-  background-color: #333; /* Dark background color */
+  /* background-color: #333; Dark background color */
   border: 2px solid white; /* White border */
   padding: 10px; /* Adjust padding as needed */
   font-size: 25px; /* Adjust font size as needed */
@@ -79,7 +78,7 @@
 .progress-partitions {
   display: flex;
   align-items: center;
-  background-color:#CDCDCD;
+  /* background-color: #cdcdcd; */
 }
 
 .progress-item {
@@ -89,7 +88,7 @@
 }
 
 .progress-item.filled {
-  background-color: green; /* Color for filled partitions */
+  background-color: rgb(41, 211, 41); /* Color for filled partitions */
 }
 
 @media screen and (max-width: 768px) {
@@ -97,7 +96,7 @@
     font-size: 60px;
   }
   .phone-container {
-    width: 250px;
+    width: 350px;
     height: 350px;
   }
 
@@ -121,55 +120,67 @@
 }
 
 @media screen and (max-width: 480px) {
-  .progress-bar
-  {
-    margin-left: 47px;
+  .timeline {
+    margin-left: 7vw;
+  }
+  .item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .progress-bar {
+    margin-left: 10px;
     margin-top: 20px;
+    width: 270px;
   }
   .timeline-bx h2 {
-    font-size: 40px;
-    margin-left: -60px;
+    font-size: 3rem;
+    margin-left: -50px;
   }
 
   .timeline-slider .item h5 {
-    font-size: 18px;
+    font-size: 2rem;
+    letter-spacing: 1px;
+  }
+
+  .timeline-slider .item p {
+    font-size: 1rem;
+    font-family: var(--font);
   }
 
   .timeline-slider .item img {
-    height: 120px;
-    width: 70px;
+    height: 170px;
+    width: 170px;
   }
-
   .progress-text {
-    font-size: 18px;
+    font-size: 1.5rem;
+    letter-spacing: 0.5px;
   }
 
   .progress-item {
     height: 8px;
     margin: 0 1px;
   }
-  .phone-container
-  {
-    margin-left: 50px;
+  .phone-container {
+    height: 500px;
   }
-  .phone-container img{
-    
-    height: 200px;
-    width: 300px;
+  .phone-container img {
+    height: 280px;
+    width: 450px;
     border-radius: 5px;
     transform: rotate(270deg);
     margin-left: -50px;
   }
-  .item img{
+  .item img {
     transform: rotate(0deg);
-    margin-left: 10px;
+    margin-left: -9px;
   }
-  .phone-screen
-  {
-    position: absolute;
-    left: 0px;
+  .phone-screen {
+    top: 40px;
+    left: 20px;
     z-index: 100;
-    height:250px;
-    width:200px;
+    height: 250px;
+    width: 250px;
   }
 }

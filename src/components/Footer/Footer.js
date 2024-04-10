@@ -8,7 +8,7 @@ import vignanLogo from "./assets/2016-09-6-06-44-05_vignanlogo (1) 1.png";
 
 function Footer() {
   const handleRegisterClick = () => {
-    window.location.href = "https://lu.ma/y9an02gq";
+    window.location.href = "https://lu.ma/sus-hacks";
   };
   return (
     <div className="Footer-container">
