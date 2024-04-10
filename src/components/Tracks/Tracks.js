@@ -71,14 +71,12 @@ const Tracks = () => {
   const [tracksPosition, setTracksPosition] = useState(0); 
 
   const handleTracksUp = () => {
-      setIndex(index-1===-1?TracksData.length-1:index-1);
-      console.log("Up");
+    setIndex((index - 1 + TracksData.length) % TracksData.length);
   };
 
   const handleTracksDown = () => {
-      setIndex((index+1)%TracksData.length); 
-      console.log("Down");
-    }
+    setIndex((index + 1) % TracksData.length);
+  };
   return (
     <div className="TracksHome" id="Tracks">
       <div className="TracksHeader">
@@ -96,13 +94,13 @@ const Tracks = () => {
         </div>
       </div>
       <div className="TracksContainer">
-        <div className="TracksMoveButtons">
-          {/* <button className="TracksMoveUp" onClick={handleTracksUp}>
-            up
+      <div className="TracksMoveButtons" style={{ display: window.innerWidth > 740 ? 'none' : 'block' }}>
+          <button className="TracksMoveUp" onClick={handleTracksUp}>
+            left
           </button>
           <button className="TracksMoveDown" onClick={handleTracksDown}>
-            down
-          </button> */}
+            right
+          </button>
         </div>
         <div className="TracksButtons">
             {TracksData.map((track, i) => (
@@ -117,6 +115,7 @@ const Tracks = () => {
               </motion.button>
             ))}
           </div>
+        <h2 className="Tracks-Heading" style={{ display: window.innerWidth > 740 ? 'none' : '' }}>{TracksData[index].title}</h2>
         <motion.div className="TracksDescriptionBox" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5 }}>
           <h1>{TracksData[index].title}</h1>
           <p>{TracksData[index].description}</p>
