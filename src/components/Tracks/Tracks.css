@@ -75,7 +75,7 @@
 .TracksDescriptionBox h1 {
   color: aliceblue;
   font-family: "Among Us";
-  font-size: 3rem;
+  font-size: 2rem;
   letter-spacing: 3px;
 }
 .TracksButtons {
@@ -155,7 +155,7 @@
   }
   .TracksDescriptionBox {
     flex: 0;
-    height: 550px;
+    /* height: 550px; */
     width: 270px;
     border: 3px solid #00ffe0;
     padding-bottom: 30px;
