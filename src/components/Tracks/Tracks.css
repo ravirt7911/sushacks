@@ -1,86 +1,82 @@
-.TracksHome
-{
+.TracksHome {
   margin: 20px;
-    height:60vh;
-    background-color:#1A282F;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding: 20px;
-    font-family: 'Among Us';
-    font-size: 2rem;
+  /* height:65vh; */
+  background-color: #1a282f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+  font-family: "Among Us";
+  font-size: 2rem;
 }
-.TracksHeader
-{
-    display: flex;
-    justify-content: space-between;
-    background-color: black;
-    height:30px;
-    width: 100%;
-    padding: 4px;
+.TracksHeader {
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+  height: 30px;
+  width: 100%;
+  padding: 4px;
 }
-.TracksName
-{
-    background-color: #00FFE0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 5px;
-    width: 200px;
+.TracksName {
+  background-color: #00ffe0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  width: 200px;
 }
-.TracksIcon
-{
-    margin-left:20px;
-    color: grey;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    letter-spacing: 1px;
+.TracksIcon {
+  margin-left: 20px;
+  color: grey;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 1px;
 }
-.TracksContainer
-{
-    height:50vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding: 20px;
+.TracksContainer {
+  /* height:50vh; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
 }
-.TracksHeader
-{
-    display: flex;
-    justify-content: space-between;
-    padding: 4px;
+.TracksHeader {
+  display: flex;
+  justify-content: space-between;
+  padding: 4px;
 }
-.TracksDescriptionBox
-{
- flex:4;
- display: flex;
- font-family: var(--font);
- font-size: 1rem;
- text-align: center;
- align-items: center;
- justify-content: center;
- flex-direction: column;
- background-color: black;
- border:7px solid #00FFE0;
- border-radius: 5px;
- margin: 20px;
- height:280px;
- padding-left: 40px;
- padding-right: 40px;
+.TracksDescriptionBox {
+  flex: 4;
+  display: flex;
+  font-family: var(--font);
+  font-size: 1rem;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: black;
+  border: 7px solid #00ffe0;
+  border-radius: 5px;
+  margin: 20px;
+  height: 528px;
+  padding-left: 40px;
+  padding-right: 40px;
 }
-.TracksDescriptionBox p{
-    color: aliceblue;
+.TracksDescriptionBox p {
+  color: aliceblue;
 }
-.TracksDescriptionBox h1{
-    color: aliceblue;
-    font-family: 'Among Us';
-    font-size: 3rem;
-    letter-spacing: 3px;
+.has-icons {
+  font-family: "bootstrap-icons";
+}
+.TracksDescriptionBox h1 {
+  color: aliceblue;
+  font-family: "Among Us";
+  font-size: 3rem;
+  letter-spacing: 3px;
 }
 .TracksButtons {
   flex: 1;
@@ -91,7 +87,7 @@
   border: 5px solid #00ffe0;
   border-radius: 5px;
   margin: 10px;
-  max-height: 230px;
+  /* max-height: 254px; */
   overflow: hidden;
 }
 .TracksButton {
@@ -105,60 +101,62 @@
   letter-spacing: 1px;
   border-radius: 5px;
 }
-
-
+.res-arrow1,
+.res-arrow2 {
+  display: none;
+}
 .TracksButton.active {
-    padding: 7px;
-    background-color: #B9F2EB;
-    color: black;
-    border: none;
-    font-family: 'Among Us';
-    font-size: 1.3rem;
-    letter-spacing: 1px;
-    border-radius: 5px;
+  padding: 7px;
+  background-color: #b9f2eb;
+  color: black;
+  border: none;
+  font-family: "Among Us";
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+  border-radius: 5px;
 }
 .BlinkingCircle {
-    width: 10px; 
-    height: 10px; 
-    border-radius: 50%;
-    background-color: #B9F2EB; 
-    margin-right: 20px;
-    border: 2px solid rgb(114, 190, 114);
-  }
-@media (max-width:740px)
-{
-  .TracksHome{
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #b9f2eb;
+  margin-right: 20px;
+  border: 2px solid rgb(114, 190, 114);
+}
+@media (max-width: 740px) {
+  .TracksHome {
     margin-top: 140px;
     margin-left: 35px;
     margin-right: 35px;
     display: block;
-    height:85vh;
   }
-  .TracksHome h1
-  {
-    font-family: 'among us';
+  .TracksMoveDown{
+    position: absolute;
+    right:12%;
+    }
+  .TracksHome h1 {
+    font-family: "among us";
   }
-  .TracksContainer{
+  .TracksContainer {
     display: flex;
     flex-wrap: nowrap;
-    flex-direction: column;
+    /* flex-direction: column; */
+    justify-content: center;
     margin-top: 10px;
   }
-  .TracksIcon p{
-   margin-left: 60px;
+  .TracksIcon p {
+    margin-left: 60px;
   }
-  .TracksName{
+  .TracksName {
     display: none;
   }
-  .TracksButtons
-  {
+  .TracksButtons {
     display: none;
   }
-  .TracksDescriptionBox
-  {
-    flex:0;
-    height:550px;
-    width:170px;
+  .TracksDescriptionBox {
+    flex: 0;
+    height: 550px;
+    width: 270px;
     border: 3px solid #00ffe0;
     padding-bottom: 30px;
     text-align: start;
@@ -189,3 +187,49 @@
     border-radius: 5px;
   }
 }
+@media (max-width: 420px) {
+  .TracksMoveDown{
+    position: absolute;
+    right:40px;
+  }
+}
+/* 
+@keyframes slideUp {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-100%);
+  }
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+} */
+
+/* @keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+} */
