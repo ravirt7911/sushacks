@@ -42,22 +42,22 @@ const Timeline = () => {
   const timelineItems = [
     {
       title: "Registration Start",
-      date: "20-03-24",
+      date: "30-03-24",
       image: img0,
     },
     {
       title: "Registration Ends",
-      date: "10-04-24",
+      date: "30-04-24",
       image: img2,
     },
+    // {
+    //   title: "TEAMS SHORTLISTING STARTS",
+    //   date: "17-04-24",
+    //   image: img3,
+    // },
     {
-      title: "TEAMS SHORTLISTING STARTS",
-      date: "17-04-24",
-      image: img3,
-    },
-    {
-      title: "TEAMS SHORTLISTING ENDS",
-      date: "20-03-24",
+      title: "Registration Fee Deadline",
+      date: "21-04-24",
       image: img4,
     },
     {
