@@ -47,7 +47,7 @@ const Timeline = () => {
     },
     {
       title: "Registration Ends",
-      date: "30-04-24",
+      date: "20-04-24",
       image: img2,
     },
     // {
